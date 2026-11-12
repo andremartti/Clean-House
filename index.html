@@ -1,0 +1,2211 @@
+<!DOCTYPE html>
+<html lang="es-HN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>CLEAN HOUSE | Servicios de Limpieza y Fumigación en Tegucigalpa</title>
+  <meta name="description" content="Vaciado de fosas sépticas, limpieza de oficinas y fumigación en Tegucigalpa y Comayagüela. Comuníquese con CLEAN HOUSE.">
+  <meta name="theme-color" content="#0B3C7A">
+  <meta name="color-scheme" content="light">
+
+  <!-- Favicon SVG en línea -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23F5FAFD'/%3E%3Cpath d='M11 31 30.5 13.6a2.3 2.3 0 0 1 3 0L53 31v19.5a2.5 2.5 0 0 1-2.5 2.5h-37a2.5 2.5 0 0 1-2.5-2.5z' fill='%230B3C7A'/%3E%3Cpath d='M32 26c.6 5.6 2.4 7.4 8 8-5.6.6-7.4 2.4-8 8-.6-5.6-2.4-7.4-8-8 5.6-.6 7.4-2.4 8-8z' fill='%23fff'/%3E%3Cpath d='M4 42c2 17 44 18 57-26-11 30-42 36-57 26z' fill='%231E73D8'/%3E%3Ccircle cx='53' cy='10' r='5.5' fill='%23BFE6FA' stroke='%231E73D8' stroke-width='1.2'/%3E%3C/svg%3E">
+
+  <!-- Open Graph (vista previa al compartir por WhatsApp y redes sociales) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_HN">
+  <meta property="og:site_name" content="CLEAN HOUSE">
+  <meta property="og:title" content="CLEAN HOUSE | Servicios de Limpieza y Fumigación en Tegucigalpa">
+  <meta property="og:description" content="Vaciado de fosas sépticas, limpieza de oficinas y fumigación en Tegucigalpa y Comayagüela. Comuníquese con CLEAN HOUSE.">
+  <!-- [PENDIENTE] Al publicar el sitio, agregar:
+       <meta property="og:url" content="[URL definitiva del sitio]">
+       <meta property="og:image" content="[URL absoluta de una imagen 1200×630]"> -->
+  <meta name="twitter:card" content="summary">
+
+  <!-- Tipografías: Poppins (títulos) + Inter (textos) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "CLEAN HOUSE",
+    "slogan": "Calidad, Limpieza y Frescura",
+    "telephone": ["+504 3242-1700", "+504 2798-9472"],
+    "email": "copanclean@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Tegucigalpa", "addressCountry": "HN" },
+    "areaServed": [
+      { "@type": "City", "name": "Tegucigalpa" },
+      { "@type": "City", "name": "Comayagüela" }
+    ],
+    "sameAs": ["https://www.facebook.com/cleanhousetegus/"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vaciado de fosa séptica" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limpieza de oficinas" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fumigación" } }
+      ]
+    }
+  }
+  </script>
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <style>
+    /* ==========================================================================
+       CLEAN HOUSE — Sitio de muestra
+       Diseño y desarrollo: Nodo Colibrí
+       Estética: Fresh Corporate — Clean & Modern
+       ========================================================================== */
+
+    /* 1. TOKENS ------------------------------------------------------------- */
+    :root {
+      /* Paleta de marca */
+      --c-navy: #0B3C7A;
+      --c-blue: #1E73D8;
+      --c-green: #7CB518;
+      --c-sky: #BFE6FA;
+      --c-white: #FFFFFF;
+      --c-bg: #F5FAFD;
+      --c-text: #18324B;
+      --c-text-2: #64788A;
+
+      /* Variaciones tonales (accesibilidad y profundidad) */
+      --c-navy-900: #072B5A;
+      --c-navy-700: #1253A6;
+      --c-blue-700: #1763C0;        /* azul para texto sobre fondos claros */
+      --c-blue-50: #EAF4FD;
+      --c-sky-100: #E3F4FD;
+      --c-green-light: #A6D957;     /* acentos sobre fondos oscuros */
+      --c-green-100: #EEF7E0;
+      --c-green-700: #3F7D0B;       /* verde de acción: texto blanco ≥ 4.5:1 */
+      --c-green-800: #336608;
+      --c-text-2-strong: #55697B;   /* secundario sobre fondos tintados */
+      --c-line: #DCE8F2;
+      --c-field: #7F95AA;
+      --c-error: #B42318;
+      --c-error-bg: #FEF3F2;
+
+      --c-muted: var(--c-text-2);
+
+      /* Tipografía */
+      --font-head: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+
+      /* Formas y sombras */
+      --r-sm: 10px;
+      --r: 14px;
+      --r-md: 18px;
+      --r-lg: 24px;
+      --r-xl: 32px;
+      --shadow-sm: 0 1px 2px rgba(11, 60, 122, .06), 0 6px 16px -8px rgba(11, 60, 122, .14);
+      --shadow-md: 0 2px 4px rgba(11, 60, 122, .05), 0 16px 34px -16px rgba(11, 60, 122, .28);
+      --shadow-lg: 0 4px 10px rgba(11, 60, 122, .05), 0 30px 60px -26px rgba(11, 60, 122, .38);
+
+      --ease: cubic-bezier(.22, .8, .24, 1);
+      --header-h: 64px;
+      --gutter: 16px;
+    }
+    @media (min-width: 600px) { :root { --gutter: 24px; } }
+    @media (min-width: 1024px) { :root { --gutter: 32px; --header-h: 76px; } }
+
+    /* 2. BASE --------------------------------------------------------------- */
+    *, *::before, *::after { box-sizing: border-box; }
+    * { margin: 0; }
+    html {
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+      scroll-padding-top: calc(var(--header-h) + 12px);
+    }
+    @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
+    body {
+      font-family: var(--font-body);
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--c-text);
+      background: var(--c-white);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      overflow-x: hidden;
+    }
+    @supports (overflow: clip) { body { overflow-x: clip; } }
+    img, svg { display: block; max-width: 100%; }
+    a { color: inherit; }
+    button, input, select, textarea { font: inherit; color: inherit; }
+    h1, h2, h3 {
+      font-family: var(--font-head);
+      color: var(--c-navy);
+      line-height: 1.15;
+      letter-spacing: -.015em;
+      text-wrap: balance;
+    }
+    p { text-wrap: pretty; }
+    ul, ol { padding: 0; list-style: none; }
+
+    :focus-visible { outline: 3px solid var(--c-blue); outline-offset: 3px; }
+    .on-dark :focus-visible { outline-color: var(--c-sky); }
+
+    .sr-only {
+      position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+    }
+    .skip-link {
+      position: absolute; left: 12px; top: -120px; z-index: 200;
+      padding: .8rem 1.1rem; border-radius: var(--r-sm);
+      background: var(--c-navy); color: #fff; font-weight: 600; text-decoration: none;
+      transition: top .2s var(--ease);
+    }
+    .skip-link:focus { top: 12px; }
+    .sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
+    .icon { width: 1.25em; height: 1.25em; flex: none; }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin-inline: auto;
+      padding-inline: max(var(--gutter), env(safe-area-inset-left)) max(var(--gutter), env(safe-area-inset-right));
+    }
+
+    /* 3. BOTONES ------------------------------------------------------------ */
+    .btn {
+      --btn-h: 52px;
+      position: relative;
+      display: inline-flex; align-items: center; justify-content: center; gap: .6rem;
+      min-height: var(--btn-h);
+      padding: .7rem 1.35rem;
+      border: 2px solid transparent;
+      border-radius: var(--r);
+      font-family: var(--font-body); font-weight: 600; font-size: 1rem; line-height: 1.2;
+      text-align: center; text-decoration: none;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      transition: transform .25s var(--ease), box-shadow .25s var(--ease), background-color .2s, color .2s, border-color .2s;
+    }
+    .btn .icon { width: 1.3em; height: 1.3em; }
+    .btn:active { transform: translateY(1px) scale(.985); }
+    .btn--sm { --btn-h: 44px; padding: .45rem .95rem; font-size: .9375rem; border-radius: 12px; gap: .45rem; }
+    .btn--lg { --btn-h: 58px; padding: .85rem 1.6rem; font-size: 1.0625rem; }
+    .btn--block { width: 100%; }
+
+    .btn--wa {
+      background: var(--c-green-700); color: #fff;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.22), 0 12px 24px -12px rgba(51,102,8,.75);
+    }
+    .btn--wa:hover {
+      background: var(--c-green-800);
+      transform: translateY(-2px);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.22), 0 18px 30px -14px rgba(51,102,8,.8);
+    }
+    .btn--wa:active { transform: translateY(0) scale(.985); }
+
+    .btn--outline { background: rgba(255,255,255,.92); color: var(--c-navy); border-color: var(--c-navy); }
+    .btn--outline:hover { background: var(--c-navy); color: #fff; transform: translateY(-2px); box-shadow: 0 16px 28px -16px rgba(11,60,122,.7); }
+
+    .btn--soft { background: var(--c-green-100); color: var(--c-green-800); border-color: rgba(63,125,11,.2); }
+    .btn--soft:hover { background: var(--c-green-700); border-color: var(--c-green-700); color: #fff; transform: translateY(-2px); box-shadow: 0 14px 26px -14px rgba(51,102,8,.7); }
+
+    .btn--light { background: rgba(255,255,255,.06); color: #fff; border-color: rgba(255,255,255,.55); }
+    .btn--light:hover { background: #fff; color: var(--c-navy); border-color: #fff; transform: translateY(-2px); }
+
+    .btn .icon--arrow { width: 1.1em; height: 1.1em; transition: transform .25s var(--ease); }
+    .btn:hover .icon--arrow { transform: translateX(3px); }
+
+    /* 4. CINTA INFORMATIVA ---------------------------------------------------- */
+    .ribbon {
+      position: relative; z-index: 60;
+      background: var(--c-navy); color: #fff;
+      font-size: .8125rem; line-height: 1.35;
+      overflow: hidden;
+      transition: height .32s var(--ease), opacity .22s ease;
+    }
+    .ribbon.is-closing { opacity: 0; }
+    .ribbon__inner {
+      position: relative;
+      display: flex; align-items: center; justify-content: center;
+      min-height: 44px;
+      padding: .4rem 52px;
+    }
+    .ribbon__text { display: inline-flex; align-items: center; gap: .5rem; text-align: center; letter-spacing: .01em; color: rgba(255,255,255,.92); }
+    .ribbon__text strong { color: #fff; font-weight: 600; }
+    .ribbon__text .icon { width: 14px; height: 14px; color: var(--c-green-light); }
+    .ribbon__close {
+      position: absolute; top: 50%; right: max(4px, env(safe-area-inset-right));
+      transform: translateY(-50%);
+      width: 44px; height: 44px;
+      display: grid; place-items: center;
+      border: 0; border-radius: var(--r-sm);
+      background: transparent; color: rgba(255,255,255,.85);
+      cursor: pointer;
+      transition: background-color .2s, color .2s;
+    }
+    .ribbon__close:hover { background: rgba(255,255,255,.12); color: #fff; }
+    .ribbon__close .icon { width: 18px; height: 18px; }
+    @media (max-width: 400px) { .ribbon__text .icon { display: none; } }
+
+    /* 5. HEADER --------------------------------------------------------------- */
+    .site-header {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255,255,255,.92);
+      -webkit-backdrop-filter: saturate(1.6) blur(14px);
+      backdrop-filter: saturate(1.6) blur(14px);
+      border-bottom: 1px solid transparent;
+      transition: box-shadow .3s, border-color .3s, background-color .3s;
+    }
+    .site-header.is-scrolled {
+      background: rgba(255,255,255,.97);
+      border-bottom-color: var(--c-line);
+      box-shadow: 0 12px 30px -24px rgba(11,60,122,.55);
+    }
+    .header__inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: var(--header-h); }
+
+    .brand { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; text-decoration: none; border-radius: var(--r-sm); }
+    .brand__mark { width: 46px; height: 40px; }
+    .brand__word { width: 78px; height: 32px; }
+    @media (min-width: 1024px) {
+      .brand__mark { width: 52px; height: 46px; }
+      .brand__word { width: 88px; height: 36px; }
+    }
+
+    .nav { display: none; }
+    .nav__list { display: flex; align-items: center; gap: .15rem; }
+    .nav__list a {
+      position: relative;
+      display: inline-flex; align-items: center;
+      min-height: 44px; padding: 0 .8rem;
+      border-radius: var(--r-sm);
+      font-size: .9375rem; font-weight: 500; color: var(--c-text); text-decoration: none;
+      transition: color .2s, background-color .2s;
+    }
+    .nav__list a::after {
+      content: ""; position: absolute; left: .8rem; right: .8rem; bottom: 7px;
+      height: 2px; border-radius: 2px; background: var(--c-green);
+      transform: scaleX(0); transform-origin: left; transition: transform .3s var(--ease);
+    }
+    .nav__list a:hover { color: var(--c-navy); background: var(--c-blue-50); }
+    .nav__list a:hover::after, .nav__list a[aria-current="true"]::after { transform: scaleX(1); }
+    .nav__list a[aria-current="true"] { color: var(--c-navy); font-weight: 600; }
+
+    .header__cta { display: none; }
+    @media (min-width: 1024px) {
+      .nav { display: block; }
+      .header__wa { display: none; }
+      .header__cta { display: inline-flex; }
+    }
+    @media (min-width: 1280px) { .nav__list { gap: .4rem; } }
+
+    /* 6. HERO --------------------------------------------------------------- */
+    .hero {
+      position: relative; isolation: isolate; overflow: hidden;
+      padding: 2rem 0 4.75rem;
+      background:
+        radial-gradient(900px 520px at 100% 0%, rgba(191,230,250,.85), rgba(191,230,250,0) 65%),
+        radial-gradient(700px 480px at 0% 100%, rgba(191,230,250,.5), rgba(191,230,250,0) 60%),
+        linear-gradient(180deg, #F5FAFD 0%, #EAF5FC 100%);
+    }
+    .hero::before {
+      /* Retícula de azulejos: guiño al fondo del logo original */
+      content: ""; position: absolute; inset: 0; z-index: -2;
+      background-image:
+        linear-gradient(rgba(30,115,216,.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(30,115,216,.07) 1px, transparent 1px);
+      background-size: 64px 64px;
+      -webkit-mask-image: radial-gradient(ellipse 75% 65% at 70% 35%, #000 0%, transparent 75%);
+      mask-image: radial-gradient(ellipse 75% 65% at 70% 35%, #000 0%, transparent 75%);
+    }
+    .hero__bg { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+    .hero__grid { display: grid; gap: 2.25rem; align-items: center; }
+    @media (min-width: 960px) {
+      .hero { padding: 3.5rem 0 7rem; }
+      .hero__grid { grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr); gap: 2.5rem; }
+    }
+    @media (min-width: 1280px) { .hero { padding: 4.5rem 0 8rem; } }
+
+    .hero__eyebrow {
+      display: inline-flex; align-items: center; gap: .5rem;
+      padding: .35rem .9rem .35rem .4rem;
+      border-radius: 999px;
+      background: #fff; border: 1px solid var(--c-line); box-shadow: var(--shadow-sm);
+      font-size: .8125rem; font-weight: 600; color: var(--c-navy);
+    }
+    .hero__eyebrow-icon {
+      width: 26px; height: 26px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: var(--c-green-100); color: var(--c-green-700);
+    }
+    .hero__eyebrow-icon .icon { width: 15px; height: 15px; }
+
+    .hero__title {
+      margin-top: 1.1rem;
+      font-size: clamp(1.9rem, 1.12rem + 3.3vw, 3.45rem);
+      font-weight: 800;
+      line-height: 1.1;
+      letter-spacing: -.028em;
+    }
+    @media (min-width: 960px) { .hero__title { font-size: clamp(2.5rem, 1rem + 2.6vw, 3.45rem); } }
+    .hero__accent { position: relative; color: var(--c-blue); white-space: nowrap; }
+    .hero__accent::after {
+      content: ""; position: absolute; left: 1.4em; right: 0; bottom: -.12em; height: .2em;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 14' preserveAspectRatio='none'%3E%3Cpath d='M3 10C55 3 130 2 197 6' fill='none' stroke='%237CB518' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center / 100% 100%;
+    }
+    .hero__slogan {
+      display: flex; align-items: center; gap: .7rem;
+      margin-top: 1.15rem;
+      font-family: var(--font-head); font-weight: 600;
+      font-size: clamp(1.1rem, 1rem + .55vw, 1.4rem);
+      color: var(--c-green-700);
+    }
+    .hero__slogan::before {
+      content: ""; width: 30px; height: 3px; border-radius: 3px; flex: none;
+      background: linear-gradient(90deg, var(--c-green), var(--c-blue));
+    }
+    .hero__text { margin-top: .85rem; max-width: 34rem; font-size: 1.0625rem; color: #3B5167; }
+    .hero__ctas { display: grid; gap: .75rem; margin-top: 1.75rem; }
+    @media (min-width: 480px) { .hero__ctas { display: flex; flex-wrap: wrap; } }
+    .hero__note { display: flex; align-items: center; flex-wrap: wrap; gap: 0 .45rem; margin-top: .6rem; font-size: .9375rem; color: var(--c-text-2-strong); }
+    .hero__note .icon { width: 18px; height: 18px; color: var(--c-green-700); }
+    .hero__note a {
+      display: inline-flex; align-items: center; min-height: 44px;
+      font-weight: 700; color: var(--c-navy); text-decoration: none;
+      background: linear-gradient(var(--c-green), var(--c-green)) no-repeat 0 calc(50% + .75em) / 100% 2px;
+      transition: color .2s;
+    }
+    .hero__note a:hover { color: var(--c-blue-700); }
+
+    /* Burbujas decorativas */
+    .bubble {
+      position: absolute; border-radius: 50%;
+      background: radial-gradient(circle at 30% 28%, rgba(255,255,255,.98) 0, rgba(255,255,255,.98) 7%, rgba(255,255,255,.45) 19%, rgba(214,239,252,.35) 52%, rgba(150,205,240,.45) 88%, rgba(120,190,236,.6) 100%);
+      border: 1px solid rgba(255,255,255,.8);
+      box-shadow: inset -4px -6px 12px rgba(30,115,216,.12), 0 8px 20px -10px rgba(11,60,122,.25);
+      animation: drift var(--t, 12s) ease-in-out infinite;
+      animation-delay: var(--dl, 0s);
+    }
+    .bubble--1 { width: 72px; height: 72px; top: 12%; left: -26px; --t: 13s; }
+    .bubble--2 { width: 20px; height: 20px; top: 36%; left: 4%; --t: 9s; --dl: -3s; }
+    .bubble--3 { width: 44px; height: 44px; bottom: 14%; left: 44%; --t: 11s; --dl: -6s; }
+    .bubble--4 { width: 14px; height: 14px; top: 7%; left: 52%; --t: 8s; --dl: -2s; }
+    .bubble--5 { width: 96px; height: 96px; bottom: -34px; right: 5%; --t: 15s; --dl: -4s; }
+    .bubble--6 { width: 18px; height: 18px; top: 58%; right: 2%; --t: 10s; --dl: -5s; }
+    @media (max-width: 599px) {
+      /* En móvil, las burbujas se apartan del texto */
+      .bubble--1 { width: 54px; height: 54px; top: 1.5%; left: auto; right: -18px; }
+      .bubble--2 { top: 47%; left: auto; right: 3%; }
+    }
+    @keyframes drift {
+      0%, 100% { transform: translate3d(0, 0, 0); }
+      33% { transform: translate3d(6px, -14px, 0); }
+      66% { transform: translate3d(-5px, -6px, 0); }
+    }
+
+    /* Ilustración del hero */
+    .hero__visual { position: relative; }
+    .hero-art { position: relative; width: 100%; max-width: 540px; margin-inline: auto; aspect-ratio: 1 / 1; }
+    .hero-art__svg { width: 100%; height: 100%; }
+    .fcard {
+      position: absolute;
+      display: flex; align-items: center; gap: .6rem;
+      padding: .55rem .9rem .55rem .55rem;
+      background: rgba(255,255,255,.97);
+      border: 1px solid rgba(220,232,242,.9);
+      border-radius: 16px;
+      box-shadow: var(--shadow-md);
+      font-size: .8125rem; font-weight: 600; line-height: 1.25; color: var(--c-navy);
+      white-space: nowrap;
+      animation: bob 7s ease-in-out infinite;
+    }
+    .fcard__icon { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; color: #fff; --accent: #fff; flex: none; }
+    .fcard__icon svg { width: 25px; height: 25px; }
+    .fcard__icon--navy { background: linear-gradient(135deg, var(--c-navy), var(--c-blue)); }
+    .fcard__icon--blue { background: linear-gradient(135deg, var(--c-blue-700), #4FA8EA); }
+    .fcard__icon--green { background: linear-gradient(135deg, var(--c-green-700), var(--c-green)); }
+    .fcard--1 { top: 9%; left: 0; animation-delay: -1s; }
+    .fcard--2 { top: 47%; right: 0; animation-delay: -3.5s; }
+    .fcard--3 { bottom: 12%; left: 2%; animation-delay: -5.5s; }
+    .fchip {
+      position: absolute; bottom: 0; right: 6%;
+      display: inline-flex; align-items: center; gap: .4rem;
+      padding: .5rem .85rem .5rem .6rem;
+      border-radius: 999px;
+      background: var(--c-navy); color: #fff;
+      font-size: .75rem; font-weight: 600; white-space: nowrap;
+      box-shadow: var(--shadow-md);
+      animation: bob 8s ease-in-out infinite; animation-delay: -2s;
+    }
+    .fchip .icon { width: 15px; height: 15px; color: var(--c-green-light); }
+    @keyframes bob { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+    @media (max-width: 479px) {
+      .fcard { font-size: .75rem; padding: .4rem .65rem .4rem .4rem; gap: .45rem; border-radius: 13px; }
+      .fcard__icon { width: 30px; height: 30px; border-radius: 9px; }
+      .fcard__icon svg { width: 20px; height: 20px; }
+      .fchip { font-size: .6875rem; padding: .4rem .7rem .4rem .5rem; }
+    }
+
+    .float-a { animation: bob 9s ease-in-out infinite; }
+    .float-b { animation: bob 11s ease-in-out infinite; animation-delay: -4s; }
+    .float-c { animation: bob 7.5s ease-in-out infinite; animation-delay: -2s; }
+    .twinkle { transform-box: fill-box; transform-origin: center; animation: twinkle 4.5s ease-in-out infinite; }
+    .twinkle--2 { animation-delay: -2.2s; }
+    @keyframes twinkle { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: .45; transform: scale(.7); } }
+
+    .hero__wave { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 44px; color: #fff; }
+    @media (min-width: 960px) { .hero__wave { height: 80px; } }
+
+    /* 7. SECCIONES — patrón común ---------------------------------------------- */
+    .section { position: relative; padding-block: clamp(4rem, 2.8rem + 4.5vw, 6.5rem); }
+    .section--tint { background: var(--c-bg); --c-muted: var(--c-text-2-strong); }
+    .section-head { max-width: 44rem; margin: 0 auto 2.5rem; text-align: center; }
+    @media (min-width: 960px) { .section-head { margin-bottom: 3.25rem; } }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: .6rem;
+      margin-bottom: .85rem;
+      font-size: .8125rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+      color: var(--c-blue-700);
+    }
+    .eyebrow::before {
+      content: ""; width: 8px; height: 8px; border-radius: 50%; flex: none;
+      background: var(--c-green); box-shadow: 0 0 0 4px rgba(124,181,24,.22);
+    }
+    .eyebrow--light { color: var(--c-sky); }
+    .h2 { font-size: clamp(1.7rem, 1.2rem + 2vw, 2.6rem); font-weight: 700; }
+    .section-lead { margin-top: .9rem; font-size: 1.0625rem; color: var(--c-muted); }
+
+    /* 8. SERVICIOS ------------------------------------------------------------ */
+    .services { background: #fff; }
+    .svc-grid { display: grid; gap: 1.25rem; }
+    @media (min-width: 960px) { .svc-grid { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; } }
+    .svc {
+      position: relative;
+      display: flex; flex-direction: column; height: 100%;
+      background: #fff;
+      border: 1px solid var(--c-line);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform .4s var(--ease), box-shadow .4s var(--ease), border-color .3s;
+    }
+    .svc:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: transparent; }
+    .svc__media {
+      position: relative; isolation: isolate; overflow: hidden;
+      display: grid; place-items: center;
+      height: 176px;
+      background: var(--svc-bg);
+      color: #fff;
+    }
+    .svc__media::before {
+      content: ""; position: absolute; inset: 0; z-index: -1;
+      background:
+        radial-gradient(circle at 10% 82%, rgba(255,255,255,.2) 0 24px, transparent 25px),
+        radial-gradient(circle at 21% 60%, rgba(255,255,255,.14) 0 9px, transparent 10px),
+        radial-gradient(circle at 90% 18%, rgba(255,255,255,.18) 0 34px, transparent 35px),
+        radial-gradient(circle at 79% 42%, rgba(255,255,255,.14) 0 8px, transparent 9px),
+        radial-gradient(circle at 86% 88%, rgba(255,255,255,.1) 0 14px, transparent 15px);
+      transition: transform .8s var(--ease);
+    }
+    .svc:hover .svc__media::before { transform: translateY(-6px); }
+    .svc__media::after {
+      content: ""; position: absolute; inset: 0; z-index: -1; opacity: .5;
+      background-image:
+        linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
+      background-size: 32px 32px;
+    }
+    .svc__num {
+      position: absolute; top: 14px; left: 18px;
+      font-family: var(--font-head); font-weight: 700; font-size: .875rem; letter-spacing: .1em;
+      color: rgba(255,255,255,.9);
+    }
+    .svc__icon {
+      width: 96px; height: 96px;
+      display: grid; place-items: center;
+      border-radius: 28px;
+      background: rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.36);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.35), 0 20px 32px -18px rgba(0,0,0,.4);
+      transition: transform .5s var(--ease);
+    }
+    .svc__icon svg { width: 58px; height: 58px; }
+    .svc:hover .svc__icon { transform: translateY(-4px) rotate(-3deg) scale(1.04); }
+    .svc--1 { --svc-bg: linear-gradient(140deg, #0B3C7A 0%, #1557AE 55%, #1E73D8 100%); --accent: var(--c-green-light); }
+    .svc--2 { --svc-bg: linear-gradient(140deg, #1660BA 0%, #1E73D8 45%, #5AB0EC 100%); --accent: var(--c-green-light); }
+    .svc--3 { --svc-bg: linear-gradient(140deg, #3A740A 0%, #5A9A12 50%, #8CC63A 100%); --accent: #fff; }
+    .svc__body { display: flex; flex-direction: column; gap: .7rem; flex: 1; padding: 1.5rem 1.5rem 1.6rem; }
+    .svc__title { font-size: 1.3rem; font-weight: 700; }
+    .svc__text { flex: 1; color: var(--c-muted); }
+    .svc__body .btn { margin-top: .6rem; }
+    @media (min-width: 640px) and (max-width: 959px) {
+      .svc { flex-direction: row; }
+      .svc__media { width: 210px; height: auto; flex: none; }
+      .svc__body { padding: 1.6rem 1.75rem; }
+      .svc__body .btn { align-self: flex-start; }
+    }
+
+    /* 9. POR QUÉ ELEGIR ------------------------------------------------------- */
+    .why__grid { display: grid; gap: 1.25rem; }
+    @media (min-width: 1024px) { .why__grid { grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); gap: 1.5rem; } }
+    .why__panel {
+      position: relative; isolation: isolate; overflow: hidden;
+      display: flex; flex-direction: column; align-items: flex-start; gap: 1rem;
+      padding: 2.25rem 1.5rem;
+      border-radius: var(--r-xl);
+      color: #fff;
+      background:
+        radial-gradient(520px 340px at 110% 115%, rgba(30,115,216,.95), rgba(30,115,216,0) 70%),
+        radial-gradient(320px 220px at -10% -10%, rgba(191,230,250,.18), rgba(191,230,250,0) 70%),
+        linear-gradient(160deg, #0B3C7A, #0A3470);
+      box-shadow: var(--shadow-lg);
+    }
+    @media (min-width: 600px) { .why__panel { padding: 2.75rem 2.5rem; } }
+    .why__panel .eyebrow { margin-bottom: 0; }
+    .why__panel .h2 { color: #fff; }
+    .why__slogan { font-family: var(--font-head); font-weight: 600; font-size: 1.125rem; color: var(--c-green-light); }
+    .why__copy { color: rgba(255,255,255,.86); max-width: 26rem; }
+    .why__panel .btn { margin-top: .5rem; }
+    @media (max-width: 599px) {
+      .why__panel { padding: 2rem 1.25rem; }
+      .why__panel .btn { width: 100%; padding-inline: .9rem; font-size: .9375rem; }
+    }
+    .why__mark {
+      position: absolute; right: -36px; bottom: -30px; z-index: -1;
+      width: 240px; height: 210px; opacity: .13;
+      --lm-house: #fff; --lm-star: #0B3C7A; --lm-gap: transparent; --lm-swoosh: #BFE6FA;
+    }
+    .why__panel .bubble { opacity: .5; }
+    .why__panel .bubble--a { width: 46px; height: 46px; top: 18px; right: 22px; --t: 12s; }
+    .why__panel .bubble--b { width: 16px; height: 16px; top: 72px; right: 84px; --t: 9s; --dl: -3s; }
+
+    .why__list { display: grid; gap: 1rem; }
+    @media (min-width: 600px) { .why__list { grid-template-columns: 1fr 1fr; } }
+    .why-item {
+      position: relative;
+      padding: 1.5rem 1.4rem;
+      background: #fff;
+      border: 1px solid var(--c-line);
+      border-radius: var(--r-lg);
+      box-shadow: var(--shadow-sm);
+      transition: transform .35s var(--ease), box-shadow .35s var(--ease);
+    }
+    .why-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .why-item__icon {
+      width: 54px; height: 54px; margin-bottom: 1rem;
+      display: grid; place-items: center;
+      border-radius: 17px;
+      background: var(--tint); color: var(--ink);
+    }
+    .why-item__icon svg { width: 27px; height: 27px; }
+    .why-item h3 { margin-bottom: .35rem; font-size: 1.125rem; font-weight: 700; }
+    .why-item p { font-size: .975rem; color: var(--c-text-2); }
+    @media (max-width: 599px) {
+      /* Composición ligera en móvil: ícono a la izquierda */
+      .why-item { display: grid; grid-template-columns: 54px 1fr; column-gap: 1rem; align-items: start; padding: 1.25rem 1.15rem; }
+      .why-item__icon { grid-row: span 2; margin-bottom: 0; }
+      .why-item h3 { margin-top: .15rem; }
+    }
+    .tone-green { --tint: var(--c-green-100); --ink: var(--c-green-700); }
+    .tone-blue { --tint: var(--c-blue-50); --ink: var(--c-blue-700); }
+    .tone-sky { --tint: var(--c-sky-100); --ink: var(--c-navy); }
+    .tone-navy { --tint: var(--c-navy); --ink: #fff; }
+
+    /* 10. CÓMO FUNCIONA -------------------------------------------------------- */
+    .process { background: #fff; }
+    .steps { position: relative; display: grid; max-width: 34rem; margin-inline: auto; }
+    .step { position: relative; display: grid; grid-template-columns: 68px 1fr; align-content: start; gap: 1.1rem; padding-bottom: 2.25rem; }
+    .step:last-child { padding-bottom: 0; }
+    .step::before {
+      content: ""; position: absolute; left: 33px; top: 74px; bottom: 8px; width: 2px;
+      background: repeating-linear-gradient(180deg, rgba(30,115,216,.45) 0 6px, transparent 6px 12px);
+    }
+    .step:last-child::before { display: none; }
+    .step__badge {
+      position: relative;
+      width: 68px; height: 68px;
+      display: grid; place-items: center;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 25%, #fff 0%, var(--c-sky-100) 100%);
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 1px var(--c-line), 0 14px 26px -14px rgba(30,115,216,.6);
+      color: var(--c-blue-700);
+    }
+    .step__badge svg { width: 30px; height: 30px; }
+    .step__num {
+      position: absolute; top: -4px; right: -8px;
+      min-width: 30px; height: 26px; padding: 0 .4rem;
+      display: grid; place-items: center;
+      border-radius: 999px;
+      background: var(--c-navy); color: #fff;
+      font-family: var(--font-head); font-size: .75rem; font-weight: 700; letter-spacing: .04em;
+      box-shadow: 0 0 0 3px #fff;
+    }
+    .step__body { padding-top: .55rem; }
+    .step__body h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: .3rem; }
+    .step__body p { color: var(--c-muted); }
+    @media (min-width: 900px) {
+      .steps { grid-template-columns: repeat(3, 1fr); gap: 2rem; max-width: none; }
+      .steps::before, .steps::after {
+        content: ""; position: absolute; top: 44px; height: 2px;
+        left: calc((100% - 4rem) / 6); right: calc((100% - 4rem) / 6);
+      }
+      .steps::before { background: repeating-linear-gradient(90deg, rgba(30,115,216,.35) 0 8px, transparent 8px 16px); }
+      .steps::after {
+        background: linear-gradient(90deg, var(--c-green), var(--c-blue));
+        transform: scaleX(0); transform-origin: left;
+        transition: transform 1.4s var(--ease) .2s;
+      }
+      .steps.is-visible::after, html:not(.js) .steps::after { transform: scaleX(1); }
+      .step { grid-template-columns: 1fr; justify-items: center; text-align: center; padding: 0; }
+      .step::before { display: none; }
+      .step__badge { z-index: 1; width: 88px; height: 88px; }
+      .step__badge svg { width: 36px; height: 36px; }
+      .step__body { padding-top: .5rem; max-width: 18rem; }
+    }
+    .process__cta { display: flex; justify-content: center; margin-top: 2.75rem; }
+    @media (max-width: 479px) { .process__cta .btn { width: 100%; } }
+
+    /* 11. PARA QUIÉN ------------------------------------------------------------ */
+    .spaces__grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: .875rem; }
+    @media (min-width: 600px) { .spaces__grid { grid-template-columns: repeat(3, 1fr); gap: 1rem; } }
+    @media (min-width: 1024px) { .spaces__grid { grid-template-columns: repeat(6, 1fr); } }
+    .space {
+      display: flex; flex-direction: column; align-items: center; gap: .8rem;
+      padding: 1.5rem .75rem 1.35rem;
+      background: #fff;
+      border: 1px solid var(--c-line);
+      border-radius: var(--r-lg);
+      text-align: center;
+      transition: transform .35s var(--ease), box-shadow .35s var(--ease), border-color .3s;
+    }
+    .space:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent; }
+    .space__icon {
+      position: relative;
+      width: 64px; height: 64px;
+      display: grid; place-items: center;
+      border-radius: 50%;
+      background: radial-gradient(circle at 32% 28%, #fff 0 10%, var(--tint) 70%);
+      box-shadow: inset 0 0 0 1px rgba(30,115,216,.1), 0 10px 20px -14px rgba(11,60,122,.5);
+      color: var(--ink);
+      transition: transform .45s var(--ease);
+    }
+    .space__icon::after {
+      content: ""; position: absolute; top: 9px; left: 14px; width: 12px; height: 7px;
+      border-radius: 50%; background: rgba(255,255,255,.9); transform: rotate(-30deg);
+    }
+    .space:hover .space__icon { transform: translateY(-3px) scale(1.06); }
+    .space__icon svg { width: 30px; height: 30px; }
+    .space__label { font-family: var(--font-head); font-weight: 600; font-size: 1rem; color: var(--c-navy); }
+    .space:nth-child(3n+1) { --tint: var(--c-sky); --ink: var(--c-navy); }
+    .space:nth-child(3n+2) { --tint: #D8ECBA; --ink: var(--c-green-800); }
+    .space:nth-child(3n+3) { --tint: #CFE3FA; --ink: var(--c-blue-700); }
+
+    /* 12. GALERÍA --------------------------------------------------------------- */
+    .gallery { display: grid; grid-template-columns: repeat(2, 1fr); grid-auto-rows: 150px; gap: .75rem; }
+    .ph--1 { grid-column: span 2; grid-row: span 2; }
+    .ph--2 { grid-row: span 2; }
+    .ph--5, .ph--6 { grid-column: span 2; }
+    @media (min-width: 768px) {
+      .gallery { grid-template-columns: repeat(4, 1fr); grid-auto-rows: 175px; gap: 1rem; }
+    }
+    @media (min-width: 1280px) { .gallery { grid-auto-rows: 200px; } }
+
+    .ph {
+      position: relative; isolation: isolate; overflow: hidden;
+      margin: 0;
+      border-radius: var(--r-lg);
+      background: var(--ph-bg);
+      color: var(--ph-ink, #fff);
+      transition: transform .45s var(--ease), box-shadow .45s var(--ease);
+    }
+    .ph:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .ph::before {
+      /* burbujas sutiles */
+      content: ""; position: absolute; inset: 0; z-index: -1;
+      background:
+        radial-gradient(circle at 88% 16%, rgba(255,255,255,.2) 0 26px, transparent 27px),
+        radial-gradient(circle at 78% 34%, rgba(255,255,255,.14) 0 8px, transparent 9px),
+        radial-gradient(circle at 12% 22%, rgba(255,255,255,.12) 0 14px, transparent 15px);
+    }
+    .ph::after {
+      /* marco punteado: indica dónde va la fotografía */
+      content: ""; position: absolute; inset: 10px; z-index: 1; pointer-events: none;
+      border: 1.5px dashed var(--ph-dash, rgba(255,255,255,.45));
+      border-radius: 16px;
+    }
+    .ph__art { position: absolute; inset: 0; display: grid; place-items: center; }
+    .ph__icon {
+      width: 92px; height: 92px; display: grid; place-items: center;
+      border-radius: 50%;
+      background: var(--ph-circle, rgba(255,255,255,.14));
+      border: 1px solid var(--ph-ring, rgba(255,255,255,.3));
+      --accent: var(--ph-accent, var(--c-green-light));
+      transition: transform .5s var(--ease);
+    }
+    .ph:hover .ph__icon { transform: scale(1.06); }
+    .ph__icon svg { width: 52px; height: 52px; }
+    .ph__label {
+      position: absolute; left: 18px; bottom: 18px; z-index: 2;
+      display: inline-flex; align-items: center; gap: .45rem;
+      max-width: calc(100% - 36px);
+      padding: .45rem .8rem .45rem .55rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,.95);
+      box-shadow: 0 6px 16px -8px rgba(11,60,122,.45);
+      font-size: .8125rem; font-weight: 600; line-height: 1.25; color: var(--c-navy);
+    }
+    .ph__label .icon { width: 16px; height: 16px; color: var(--c-blue-700); }
+
+    .ph--2 { --ph-bg: linear-gradient(165deg, #1E73D8 0%, #0B3C7A 100%); }
+    .ph--3 { --ph-bg: linear-gradient(140deg, #DDF1FC 0%, #A9DAF6 100%); --ph-ink: var(--c-navy); --ph-dash: rgba(11,60,122,.25); --ph-circle: rgba(255,255,255,.55); --ph-ring: rgba(255,255,255,.9); --ph-accent: var(--c-green-700); }
+    .ph--4 { --ph-bg: linear-gradient(140deg, #0E4791 0%, #1E73D8 60%, #5AB0EC 100%); }
+    .ph--5 { --ph-bg: linear-gradient(140deg, #3A740A 0%, #5A9A12 55%, #8CC63A 100%); --ph-accent: #fff; }
+    .ph--6 { --ph-bg: linear-gradient(140deg, #F5FAFD 0%, #D6EEFB 100%); --ph-ink: var(--c-navy); --ph-dash: rgba(11,60,122,.25); --ph-circle: #fff; --ph-ring: var(--c-line); }
+    .ph--6 .ph__icon svg { width: 60px; height: 52px; }
+
+    /* Antes / después */
+    .ph--1 { --ph-bg: #CFE3F2; --ph-dash: rgba(255,255,255,.6); }
+    .ph__ba { position: absolute; inset: 0; display: grid; grid-template-columns: 1fr 1fr; }
+    .ph__half { position: relative; }
+    .ph__half--before {
+      background:
+        radial-gradient(60px 40px at 30% 62%, rgba(110,98,80,.22), transparent 70%),
+        radial-gradient(90px 50px at 64% 30%, rgba(110,98,80,.16), transparent 70%),
+        radial-gradient(50px 30px at 52% 84%, rgba(110,98,80,.18), transparent 70%),
+        linear-gradient(160deg, #B9C6D1 0%, #93A5B5 100%);
+    }
+    .ph__half--after {
+      background:
+        radial-gradient(circle at 70% 26%, rgba(255,255,255,.55) 0 18px, transparent 19px),
+        radial-gradient(circle at 82% 46%, rgba(255,255,255,.4) 0 7px, transparent 8px),
+        linear-gradient(160deg, #E8F6FE 0%, #A8DAF7 100%);
+    }
+    .ph__tag {
+      position: absolute; top: 22px; z-index: 2;
+      padding: .3rem .7rem; border-radius: 999px;
+      font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
+    }
+    .ph__half--before .ph__tag { left: 22px; background: rgba(24,50,75,.72); color: #fff; }
+    .ph__half--after .ph__tag { right: 22px; background: #fff; color: var(--c-navy); }
+    .ph__sparkle { position: absolute; color: #fff; }
+    .ph__sparkle--1 { width: 34px; height: 34px; left: 32%; top: 44%; }
+    .ph__sparkle--2 { width: 18px; height: 18px; left: 58%; top: 64%; }
+    .ph__divider { position: absolute; top: 0; bottom: 0; left: 50%; width: 3px; transform: translateX(-50%); background: #fff; box-shadow: 0 0 12px rgba(11,60,122,.25); }
+    .ph__handle {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      width: 46px; height: 46px; display: grid; place-items: center;
+      border-radius: 50%; background: #fff; color: var(--c-navy);
+      box-shadow: 0 8px 22px -8px rgba(11,60,122,.55);
+    }
+    .ph__handle svg { width: 24px; height: 24px; }
+
+    /* 13. PREGUNTAS FRECUENTES ---------------------------------------------------- */
+    .faq__layout { display: grid; gap: 2rem; }
+    @media (min-width: 1024px) { .faq__layout { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 4rem; align-items: start; } }
+    .faq__intro .section-head { margin: 0 0 1.75rem; text-align: left; }
+    @media (max-width: 1023px) { .faq__intro .section-head { text-align: center; margin-inline: auto; } }
+    .help-card {
+      position: relative; overflow: hidden; isolation: isolate;
+      display: grid; gap: .6rem;
+      padding: 1.5rem;
+      border-radius: var(--r-lg);
+      background: #fff;
+      border: 1px solid var(--c-line);
+      box-shadow: var(--shadow-sm);
+    }
+    .help-card::after {
+      content: ""; position: absolute; right: -62px; top: -62px; z-index: -1;
+      width: 130px; height: 130px; border-radius: 50%;
+      background: radial-gradient(circle at 35% 35%, #fff 0 8%, var(--c-sky-100) 60%);
+    }
+    .help-card h3 { font-size: 1.15rem; font-weight: 700; }
+    .help-card p { color: var(--c-text-2); }
+    .help-card .btn { margin-top: .4rem; justify-self: start; }
+    @media (max-width: 1023px) { .faq__aside { display: none; } }
+    .faq__after { margin-top: 1.5rem; }
+    @media (min-width: 1024px) { .faq__after { display: none; } .faq__intro { position: sticky; top: calc(var(--header-h) + 32px); } }
+
+    .faq__list { display: grid; gap: .75rem; }
+    .faq__item {
+      background: #fff;
+      border: 1px solid var(--c-line);
+      border-radius: var(--r-md);
+      transition: border-color .3s, box-shadow .3s;
+    }
+    .faq__item:hover { border-color: rgba(30,115,216,.3); }
+    .faq__item.is-open { border-color: rgba(30,115,216,.38); box-shadow: var(--shadow-md); }
+    .faq__q { font-size: inherit; }
+    .faq__btn {
+      width: 100%; min-height: 64px;
+      display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+      padding: 1.05rem 1.15rem 1.05rem 1.35rem;
+      background: none; border: 0; border-radius: var(--r-md);
+      font-family: var(--font-head); font-size: 1.0625rem; font-weight: 600; line-height: 1.4;
+      color: var(--c-navy); text-align: left;
+      cursor: pointer;
+    }
+    .faq__icon {
+      position: relative; flex: none;
+      width: 34px; height: 34px; border-radius: 50%;
+      background: var(--c-blue-50);
+      transition: background-color .3s, transform .35s var(--ease);
+    }
+    .faq__icon::before, .faq__icon::after {
+      content: ""; position: absolute; left: 50%; top: 50%;
+      width: 13px; height: 2px; border-radius: 2px;
+      background: var(--c-blue-700);
+      transform: translate(-50%, -50%);
+      transition: transform .35s var(--ease), background-color .3s;
+    }
+    .faq__icon::after { transform: translate(-50%, -50%) rotate(90deg); }
+    .faq__btn:hover .faq__icon { background: var(--c-sky); }
+    .faq__item.is-open .faq__icon { background: var(--c-blue); transform: rotate(180deg); }
+    .faq__item.is-open .faq__icon::before, .faq__item.is-open .faq__icon::after { background: #fff; }
+    .faq__item.is-open .faq__icon::after { transform: translate(-50%, -50%) rotate(0deg); }
+    .faq__panel-inner { overflow: hidden; min-height: 0; }
+    .faq__panel-inner p { padding: 0 1.35rem 1.3rem; color: var(--c-text-2); max-width: 40rem; }
+    .js .faq__panel {
+      display: grid; grid-template-rows: 0fr; visibility: hidden;
+      transition: grid-template-rows .38s var(--ease), visibility 0s linear .38s;
+    }
+    .js .faq__item.is-open .faq__panel {
+      grid-template-rows: 1fr; visibility: visible;
+      transition: grid-template-rows .38s var(--ease), visibility 0s linear 0s;
+    }
+
+    /* 14. CONTACTO -------------------------------------------------------------- */
+    .contact { background: linear-gradient(180deg, #fff 0%, var(--c-bg) 100%); }
+    .contact__grid { display: grid; gap: 1.5rem; grid-template-areas: "info" "form" "map"; }
+    @media (min-width: 1024px) {
+      .contact__grid {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.02fr);
+        grid-template-areas: "info form" "map form";
+        grid-template-rows: auto 1fr;
+        gap: 1.5rem 2.5rem;
+      }
+    }
+    .contact__info { grid-area: info; }
+    .contact-list { display: grid; gap: .75rem; }
+    /* 2 columnas solo cuando el correo cabe completo en una línea */
+    @media (min-width: 768px) and (max-width: 1023px) { .contact-list { grid-template-columns: 1fr 1fr; } }
+    @media (min-width: 1024px) {
+      .contact-list { gap: .65rem; }
+      .citem { min-height: 70px; padding-block: .7rem; }
+    }
+    .citem {
+      display: flex; align-items: center; gap: .9rem;
+      height: 100%; min-height: 76px;
+      padding: .85rem 1rem;
+      background: #fff;
+      border: 1px solid var(--c-line);
+      border-radius: var(--r-md);
+      color: inherit; text-decoration: none;
+      transition: transform .3s var(--ease), box-shadow .3s var(--ease), border-color .3s;
+    }
+    a.citem:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); border-color: rgba(30,115,216,.35); }
+    .citem__icon {
+      flex: none; width: 46px; height: 46px;
+      display: grid; place-items: center;
+      border-radius: 14px;
+      background: var(--tint); color: var(--ink);
+    }
+    .citem__icon svg { width: 22px; height: 22px; }
+    .citem__text { min-width: 0; }
+    .citem__label { display: block; font-size: .8125rem; font-weight: 500; color: var(--c-text-2); }
+    .citem__value { display: block; font-family: var(--font-head); font-size: 1.03rem; font-weight: 600; line-height: 1.3; color: var(--c-navy); overflow-wrap: anywhere; }
+    .citem__go { margin-left: auto; width: 18px; height: 18px; color: var(--c-blue-700); transition: transform .3s var(--ease); }
+    a.citem:hover .citem__go { transform: translateX(3px); }
+    .citem--wa { background: linear-gradient(135deg, #F2F9E8 0%, #fff 70%); border-color: rgba(124,181,24,.5); }
+    .tone-wa { --tint: var(--c-green-700); --ink: #fff; }
+    .tone-fb { --tint: #E8EEF9; --ink: var(--c-navy); }
+
+    /* Formulario */
+    .cform {
+      grid-area: form; position: relative; overflow: hidden;
+      padding: 1.6rem 1.25rem 1.5rem;
+      background: #fff;
+      border: 1px solid var(--c-line);
+      border-radius: var(--r-xl);
+      box-shadow: var(--shadow-lg);
+    }
+    @media (min-width: 600px) { .cform { padding: 2.25rem 2.25rem 2rem; } }
+    .cform::before {
+      content: ""; position: absolute; top: 0; left: 0; right: 0; height: 5px;
+      background: linear-gradient(90deg, var(--c-green), var(--c-blue) 60%, var(--c-navy));
+    }
+    .cform__title { font-size: 1.35rem; font-weight: 700; }
+    .cform__intro { margin-top: .4rem; color: var(--c-text-2); }
+    .cform__req { margin: .9rem 0 1.25rem; font-size: .875rem; color: var(--c-text-2); }
+    .field { display: grid; gap: .45rem; margin-bottom: 1.1rem; }
+    .field label { font-size: .9375rem; font-weight: 600; color: var(--c-text); }
+    .input {
+      width: 100%; min-height: 54px;
+      padding: .8rem 1rem;
+      border: 1.5px solid var(--c-field);
+      border-radius: var(--r);
+      background: #FBFDFF;
+      font-size: 1rem; line-height: 1.4;
+      color: var(--c-text);
+      transition: border-color .2s, box-shadow .2s, background-color .2s;
+    }
+    .input::placeholder { color: #6E8296; }
+    .input:hover { border-color: #5F7891; }
+    .input:focus { outline: none; border-color: var(--c-blue); background: #fff; box-shadow: 0 0 0 4px rgba(30,115,216,.2); }
+    select.input {
+      -webkit-appearance: none; appearance: none;
+      padding-right: 2.8rem;
+      background: #FBFDFF url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230B3C7A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 1rem center / 18px 18px;
+      cursor: pointer;
+    }
+    select.input:focus { background-color: #fff; }
+    textarea.input { min-height: 132px; resize: vertical; }
+    .input[aria-invalid="true"] { border-color: var(--c-error); background-color: var(--c-error-bg); }
+    .input[aria-invalid="true"]:focus { box-shadow: 0 0 0 4px rgba(180,35,24,.18); }
+    .field__error {
+      display: flex; align-items: flex-start; gap: .4rem;
+      font-size: .875rem; font-weight: 500; color: var(--c-error);
+    }
+    .field__error:empty { display: none; }
+    .field__error::before {
+      content: "!"; flex: none;
+      width: 18px; height: 18px; margin-top: 1px;
+      display: grid; place-items: center;
+      border-radius: 50%;
+      background: var(--c-error); color: #fff;
+      font-size: .75rem; font-weight: 700; line-height: 1;
+    }
+    .cform .btn { margin-top: .35rem; }
+    .cform__note { display: flex; gap: .5rem; margin-top: .9rem; font-size: .875rem; color: var(--c-text-2); }
+    .cform__note .icon { width: 18px; height: 18px; margin-top: 1px; color: var(--c-green-700); }
+    .cform__status:empty { display: none; }
+    .cform__status { margin-top: 1rem; padding: .85rem 1rem; border-radius: var(--r); font-size: .9375rem; font-weight: 500; }
+    .cform__status.is-ok { background: var(--c-green-100); color: var(--c-green-800); }
+    .cform__status.is-error { background: var(--c-error-bg); color: var(--c-error); }
+    .cform__status a { font-weight: 700; color: inherit; }
+
+    /* Mapa (marcador de posición) */
+    .map-ph {
+      grid-area: map; position: relative; overflow: hidden; isolation: isolate;
+      min-height: 230px;
+      display: grid; place-items: center;
+      padding: 1.25rem;
+      border-radius: var(--r-lg);
+      border: 1px solid var(--c-line);
+      background: #E8F3FB;
+    }
+    @media (min-width: 1024px) { .map-ph { min-height: 190px; } }
+    .map-ph__bg { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; }
+    .map-ph__card {
+      display: flex; align-items: center; gap: .9rem;
+      padding: 1rem 1.25rem 1rem 1rem;
+      border-radius: var(--r-md);
+      background: rgba(255,255,255,.96);
+      box-shadow: var(--shadow-md);
+    }
+    .map-ph__pin {
+      position: relative; flex: none;
+      width: 48px; height: 48px; display: grid; place-items: center;
+      border-radius: 50%; background: var(--c-navy); color: #fff;
+    }
+    .map-ph__pin::after {
+      content: ""; position: absolute; inset: -6px; border-radius: 50%;
+      border: 2px solid rgba(30,115,216,.45);
+      animation: ping 2.6s var(--ease) infinite;
+    }
+    .map-ph__pin svg { width: 24px; height: 24px; }
+    .map-ph__title { display: block; font-family: var(--font-head); font-weight: 700; font-size: 1.05rem; color: var(--c-navy); }
+    .map-ph__sub { display: block; font-size: .875rem; color: var(--c-text-2); }
+
+    /* 15. FOOTER ---------------------------------------------------------------- */
+    .site-footer {
+      position: relative; overflow: hidden; isolation: isolate;
+      padding: 3.5rem 0 calc(6.5rem + env(safe-area-inset-bottom));
+      background:
+        radial-gradient(700px 300px at 100% 0%, rgba(30,115,216,.45), rgba(30,115,216,0) 70%),
+        var(--c-navy);
+      color: rgba(255,255,255,.8);
+    }
+    @media (min-width: 768px) { .site-footer { padding-bottom: 2rem; } }
+    .footer__grid { display: grid; gap: 2.25rem; }
+    @media (min-width: 768px) { .footer__grid { grid-template-columns: 1.3fr 1fr 1.25fr; gap: 2rem; } }
+    .brand--footer { --lm-house: #fff; --lm-star: #0B3C7A; --lm-gap: #0B3C7A; --lm-swoosh: #BFE6FA; --lw-clean: var(--c-green-light); --lw-house: #fff; }
+    .footer__slogan { margin-top: .9rem; font-family: var(--font-head); font-weight: 600; color: var(--c-sky); }
+    .footer__social {
+      display: inline-flex; align-items: center; gap: .55rem;
+      min-height: 44px; margin-top: 1.1rem; padding: .5rem 1rem .5rem .6rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.25);
+      color: #fff; text-decoration: none; font-weight: 600; font-size: .9375rem;
+      transition: background-color .2s, border-color .2s;
+    }
+    .footer__social:hover { background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.5); }
+    .footer__social .icon { width: 26px; height: 26px; }
+    .footer__title { margin-bottom: .75rem; font-family: var(--font-body); font-size: .8125rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--c-sky); }
+    .footer__links { display: grid; grid-template-columns: 1fr 1fr; column-gap: 1rem; }
+    .footer__links a, .footer__contact a {
+      display: inline-flex; align-items: center; gap: .6rem;
+      min-height: 44px; min-width: 44px;
+      color: #fff; text-decoration: none; opacity: .88;
+      transition: opacity .2s, color .2s;
+    }
+    .footer__links a:hover, .footer__contact a:hover { opacity: 1; color: var(--c-sky); }
+    .footer__contact .icon { width: 18px; height: 18px; color: var(--c-green-light); }
+    .footer__contact span.k { color: rgba(255,255,255,.7); font-size: .875rem; }
+    .footer__bottom {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem 1.5rem;
+      margin-top: 2.5rem; padding-top: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,.14);
+      font-size: .8125rem; color: rgba(255,255,255,.72);
+    }
+    .footer__credit a {
+      color: var(--c-sky); font-weight: 600; text-decoration: none;
+      background: linear-gradient(currentColor, currentColor) no-repeat 0 100% / 0 1px;
+      transition: background-size .3s var(--ease);
+      display: inline-flex; align-items: center; min-height: 44px;
+    }
+    .footer__credit a:hover { background-size: 100% 1px; }
+
+    /* 16. BOTÓN FLOTANTE DE WHATSAPP -------------------------------------------- */
+    .wa-float {
+      position: fixed; z-index: 70;
+      right: calc(16px + env(safe-area-inset-right));
+      bottom: calc(16px + env(safe-area-inset-bottom));
+      width: 60px; height: 60px;
+      display: grid; place-items: center;
+      border-radius: 50%;
+      background: var(--c-green-700); color: #fff;
+      box-shadow: 0 16px 30px -10px rgba(40,90,8,.6), 0 4px 12px rgba(11,60,122,.18);
+      text-decoration: none;
+      transition: transform .3s var(--ease), background-color .2s, opacity .25s, visibility .25s;
+    }
+    .wa-float::before {
+      content: ""; position: absolute; inset: 0; border-radius: 50%;
+      border: 2px solid var(--c-green);
+      animation: ping 2.8s var(--ease) 2s 3 both;
+      pointer-events: none;
+    }
+    .wa-float:hover { background: var(--c-green-800); transform: translateY(-3px) scale(1.04); }
+    .wa-float:active { transform: scale(.96); }
+    .wa-float .icon { width: 30px; height: 30px; }
+    .wa-float__tip {
+      position: absolute; right: calc(100% + 12px); top: 50%;
+      transform: translate(8px, -50%);
+      padding: .55rem .9rem;
+      border-radius: 12px;
+      background: #fff; color: var(--c-navy);
+      box-shadow: var(--shadow-md);
+      font-size: .875rem; font-weight: 600; white-space: nowrap;
+      opacity: 0; visibility: hidden; pointer-events: none;
+      transition: opacity .25s, transform .25s var(--ease), visibility .25s;
+    }
+    @media (min-width: 1024px) {
+      .wa-float { right: calc(28px + env(safe-area-inset-right)); bottom: calc(28px + env(safe-area-inset-bottom)); width: 64px; height: 64px; }
+      .wa-float:hover .wa-float__tip, .wa-float:focus-visible .wa-float__tip { opacity: 1; visibility: visible; transform: translate(0, -50%); }
+    }
+    @media (max-width: 767px) {
+      .is-typing .wa-float { opacity: 0; visibility: hidden; transform: scale(.85); }
+    }
+    @keyframes ping {
+      0% { transform: scale(1); opacity: .75; }
+      80%, 100% { transform: scale(1.5); opacity: 0; }
+    }
+
+    /* 17. APARICIÓN AL DESPLAZAR ----------------------------------------------- */
+    @media (prefers-reduced-motion: no-preference) {
+      .js [data-reveal] {
+        opacity: 0; transform: translateY(22px);
+        transition: opacity .7s var(--ease), transform .7s var(--ease);
+        transition-delay: calc(var(--d, 0) * 90ms);
+      }
+      .js [data-reveal].is-visible { opacity: 1; transform: none; }
+    }
+
+    /* 18. MOVIMIENTO REDUCIDO --------------------------------------------------- */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+        transition-delay: 0s !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <!-- ===================================================================
+       SPRITE DE ÍCONOS SVG (personalizados, en línea)
+       =================================================================== -->
+  <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="g-swoosh" x1="0" y1="1" x2="1" y2="0">
+        <stop offset="0" stop-color="#0B3C7A"/>
+        <stop offset="1" stop-color="#1E73D8"/>
+      </linearGradient>
+      <radialGradient id="g-bubble" cx="38%" cy="32%" r="70%">
+        <stop offset="0" stop-color="#FFFFFF" stop-opacity=".95"/>
+        <stop offset=".45" stop-color="#E6F5FD" stop-opacity=".55"/>
+        <stop offset=".82" stop-color="#BFE6FA" stop-opacity=".6"/>
+        <stop offset="1" stop-color="#7FC1EC" stop-opacity=".85"/>
+      </radialGradient>
+    </defs>
+
+    <!-- Burbuja -->
+    <symbol id="bubble" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="47" fill="url(#g-bubble)" stroke="#8FCBEF" stroke-opacity=".8" stroke-width="2"/>
+      <ellipse cx="33" cy="29" rx="13" ry="7" transform="rotate(-35 33 29)" fill="#fff" opacity=".95"/>
+      <path d="M79 60a31 31 0 0 1-17 20" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+    </symbol>
+
+    <!-- Isotipo CLEAN HOUSE (reinterpretación: casa, destello, aro y burbujas) -->
+    <symbol id="logo-mark" viewBox="0 0 64 56">
+      <rect x="16" y="10" width="7" height="13" rx="1.5" style="fill:var(--lm-house,#0B3C7A)"/>
+      <path d="M10 28 30.5 9.6a2.3 2.3 0 0 1 3 0L54 28v18.5a2.5 2.5 0 0 1-2.5 2.5h-39A2.5 2.5 0 0 1 10 46.5z" style="fill:var(--lm-house,#0B3C7A)"/>
+      <polygon points="32,23.5 32.65,31.43 35.54,29.46 33.57,32.35 41.5,33 33.57,33.65 35.54,36.54 32.65,34.57 32,42.5 31.35,34.57 28.46,36.54 30.43,33.65 22.5,33 30.43,32.35 28.46,29.46 31.35,31.43" style="fill:var(--lm-star,#fff)"/>
+      <path d="M3 37C5 56 46 58 61 13 47 44 16 52 3 37z" style="fill:var(--lm-swoosh,url(#g-swoosh));stroke:var(--lm-gap,#fff);stroke-width:1.6;paint-order:stroke"/>
+      <use href="#bubble" x="51" y="0" width="11" height="11"/>
+      <use href="#bubble" x="44" y="1" width="5" height="5"/>
+    </symbol>
+
+    <!-- Logotipo tipográfico: CLEAN (verde) sobre HOUSE (azul marino) -->
+    <symbol id="logo-word" viewBox="0 0 103 42.5">
+      <text x=".9" y="15" font-size="20" letter-spacing="8.85" style="font-family:Poppins,'Segoe UI',Arial,sans-serif;font-weight:800;fill:var(--lw-clean,#7CB518)">CLEAN</text>
+      <text x="0" y="41.7" font-size="30.1" style="font-family:Poppins,'Segoe UI',Arial,sans-serif;font-weight:800;fill:var(--lw-house,#0B3C7A)">HOUSE</text>
+    </symbol>
+
+    <!-- WhatsApp -->
+    <symbol id="i-whatsapp" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35m-5.42 7.4h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88a9.82 9.82 0 0 1 6.99 2.9 9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88m8.41-18.3A11.81 11.81 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89a11.82 11.82 0 0 0-3.48-8.41"/>
+    </symbol>
+
+    <!-- Facebook -->
+    <symbol id="i-facebook" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M24 12.07C24 5.41 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.5 0-1.96.93-1.96 1.89v2.26h3.32l-.53 3.5h-2.8V24C19.62 23.1 24 18.1 24 12.07"/>
+    </symbol>
+
+    <!-- Íconos de línea (24×24) -->
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 4h3.6l1.8 4.6-2.3 1.4a11.5 11.5 0 0 0 5.9 5.9l1.4-2.3 4.6 1.8V19a2 2 0 0 1-2 2C10.5 20.4 3.6 13.5 3 6a2 2 0 0 1 2-2z"/>
+    </symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m4 7.5 8 5.5 8-5.5"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21.5s-7-6.1-7-11.6a7 7 0 0 1 14 0c0 5.5-7 11.6-7 11.6z"/><circle cx="12" cy="9.8" r="2.6"/>
+    </symbol>
+    <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="8" r="4"/><path d="M4.5 20.5a7.5 7.5 0 0 1 15 0"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round">
+      <path d="M6 6l12 12M18 6 6 18"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14M13 6l6 6-6 6"/>
+    </symbol>
+    <symbol id="i-arrows-h" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m8 7-5 5 5 5M16 7l5 5-5 5"/>
+    </symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="m5 12.5 4.5 4.5L19 7.5"/>
+    </symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24">
+      <path fill="currentColor" d="M12 2c.7 5.6 2.4 7.3 8 8-5.6.7-7.3 2.4-8 8-.7-5.6-2.4-7.3-8-8 5.6-.7 7.3-2.4 8-8z"/>
+      <path fill="currentColor" d="M19 15c.3 2.4 1 3.1 3.4 3.4-2.4.3-3.1 1-3.4 3.4-.3-2.4-1-3.1-3.4-3.4 2.4-.3 3.1-1 3.4-3.4z" opacity=".7"/>
+    </symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M20 12.2c0 4-3.6 7.3-8 7.3-1.2 0-2.3-.2-3.3-.6L4 20l1.2-3.6A6.9 6.9 0 0 1 4 12.2C4 8.2 7.6 5 12 5s8 3.2 8 7.2z"/><path d="M8.5 12.2h.01M12 12.2h.01M15.5 12.2h.01" stroke-width="2.6"/>
+    </symbol>
+    <symbol id="i-spaces" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="3" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="3" width="7.5" height="7.5" rx="3.75"/><rect x="3" y="13.5" width="7.5" height="7.5" rx="2"/><rect x="13.5" y="13.5" width="7.5" height="7.5" rx="2"/>
+    </symbol>
+    <symbol id="i-clean" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 3c.6 4.6 2 6 6.6 6.6C12 10.2 10.6 11.6 10 16.2 9.4 11.6 8 10.2 3.4 9.6 8 9 9.4 7.6 10 3z"/><path d="M18 14.5c.3 2.2 1 2.9 3.2 3.2-2.2.3-2.9 1-3.2 3.2-.3-2.2-1-2.9-3.2-3.2 2.2-.3 2.9-1 3.2-3.2z"/>
+    </symbol>
+    <symbol id="i-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 4.5 3.5 6.6v13l5.5-2.1 6 2.1 5.5-2.1v-13L15 6.6z"/><path d="M9 4.5v13M15 6.6v13"/>
+    </symbol>
+    <symbol id="i-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="m9 15 2 2 4-4"/>
+    </symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4.5 7.5h2.8l1.7-2.5h6l1.7 2.5h2.8a1.5 1.5 0 0 1 1.5 1.5v9.5a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 18.5V9a1.5 1.5 0 0 1 1.5-1.5z"/><circle cx="12" cy="13.3" r="3.5"/>
+    </symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="8" r="3.4"/><path d="M2.8 20a6.2 6.2 0 0 1 12.4 0"/><circle cx="17.2" cy="9" r="2.6"/><path d="M16 14.2a5 5 0 0 1 5.4 5"/>
+    </symbol>
+    <!-- Espacios -->
+    <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 11 12 3.8 21 11"/><path d="M5.5 9.2V20h13V9.2"/><path d="M10 20v-5.5h4V20"/>
+    </symbol>
+    <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4.5 20.5V4.5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v16"/><path d="M15.5 9h3a1 1 0 0 1 1 1v10.5"/><path d="M2.5 20.5h19"/><path d="M8 7.5h1.5M11 7.5h1.5M8 11h1.5M11 11h1.5M8 14.5h1.5M11 14.5h1.5"/>
+    </symbol>
+    <symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4.5 10.5v10h15v-10"/><path d="M3.5 4h17l1 4.2a2.6 2.6 0 0 1-4.6 1.6 2.6 2.6 0 0 1-4.4 0 2.6 2.6 0 0 1-4.4 0 2.6 2.6 0 0 1-4.6-1.6z"/><path d="M9.5 20.5V15h5v5.5"/>
+    </symbol>
+    <symbol id="i-restaurant" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 3v7.5M4.5 3v4.5a2.5 2.5 0 0 0 5 0V3M7 10.5V21"/><path d="M18 21V3c-2.5 1.3-3.5 4.2-3.5 7.5V14H18"/>
+    </symbol>
+    <symbol id="i-school" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2.5 20.5h19"/><path d="M4.5 20.5v-9L12 7l7.5 4.5v9"/><path d="M12 7V2.5l3.5 1.3L12 5"/><path d="M10 20.5v-4h4v4"/><circle cx="12" cy="12" r="1.6"/>
+    </symbol>
+    <symbol id="i-condo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3.5 20.5v-11a1 1 0 0 1 1-1h5.5"/><path d="M10 20.5V4.5a1 1 0 0 1 1-1h8.5a1 1 0 0 1 1 1v16"/><path d="M2 20.5h20"/><path d="M6 12h1.5M6 15.5h1.5M13.5 7.5h1M16.5 7.5h1M13.5 11h1M16.5 11h1M13.5 14.5h1M16.5 14.5h1"/>
+    </symbol>
+
+    <!-- Íconos de servicio (64×64, duotono) -->
+    <symbol id="s-truck" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="4" y="17" width="32" height="20" rx="10" fill="currentColor" fill-opacity=".16"/>
+      <path d="M12 27h16" opacity=".6"/>
+      <path d="M26 17v-4.5a2 2 0 0 1 2-2h5"/>
+      <path d="M12 37v3M28 37v3"/>
+      <path d="M38 40V24h9.6a3 3 0 0 1 2.4 1.2l6.4 8.5a3 3 0 0 1 .6 1.8V40"/>
+      <path d="M42 28h5.3l4.2 5.6H42z" fill="currentColor" fill-opacity=".16"/>
+      <path d="M3 40h55"/>
+      <circle cx="15" cy="47" r="5.5" fill="currentColor" fill-opacity=".16"/>
+      <circle cx="47" cy="47" r="5.5" fill="currentColor" fill-opacity=".16"/>
+      <path d="M11 6.5c.5 3.6 1.6 4.7 5.2 5.2-3.6.5-4.7 1.6-5.2 5.2-.5-3.6-1.6-4.7-5.2-5.2 3.6-.5 4.7-1.6 5.2-5.2z" stroke="none" style="fill:var(--accent,currentColor)"/>
+    </symbol>
+    <symbol id="s-office" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 57V12a3 3 0 0 1 3-3h19a3 3 0 0 1 3 3v45" fill="currentColor" fill-opacity=".16"/>
+      <path d="M37 25h12a3 3 0 0 1 3 3v29"/>
+      <path d="M6 57h52"/>
+      <path d="M19 17h3M27 17h3M19 25h3M27 25h3M19 33h3M27 33h3M19 41h3M27 41h3M43 33h3M43 41h3"/>
+      <path d="M21 57v-8h7v8"/>
+      <path d="M51 4c.5 4.4 2.1 6 6.5 6.5-4.4.5-6 2.1-6.5 6.5-.5-4.4-2.1-6-6.5-6.5C49 10 50.5 8.4 51 4z" stroke="none" style="fill:var(--accent,currentColor)"/>
+      <circle cx="58" cy="21" r="1.8" stroke="none" style="fill:var(--accent,currentColor)"/>
+    </symbol>
+    <symbol id="s-shield" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M32 6 52 13.5v15.3c0 12.9-8.4 22.9-20 27.7-11.6-4.8-20-14.8-20-27.7V13.5z" fill="currentColor" fill-opacity=".16"/>
+      <path d="m23.5 31 6 6L41 25.5" stroke-width="3.2" style="stroke:var(--accent,currentColor)"/>
+      <circle cx="56" cy="8" r="2" stroke="none" style="fill:var(--accent,currentColor)"/>
+      <circle cx="60" cy="14.5" r="1.5" stroke="none" style="fill:var(--accent,currentColor)"/>
+      <circle cx="54.5" cy="2.8" r="1.3" stroke="none" style="fill:var(--accent,currentColor)"/>
+    </symbol>
+  </svg>
+
+  <!-- ===================================================================
+       SECCIÓN 1 · CINTA INFORMATIVA
+       =================================================================== -->
+  <div class="ribbon on-dark" id="ribbon" role="region" aria-label="Aviso de sitio de muestra">
+    <div class="ribbon__inner">
+      <p class="ribbon__text">
+        <svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg>
+        <span>Muestra preparada para Clean House por <strong>Nodo Colibrí</strong></span>
+      </p>
+      <button type="button" class="ribbon__close" id="ribbon-close" aria-label="Cerrar aviso">
+        <svg class="icon" aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       SECCIÓN 2 · HEADER / NAVEGACIÓN
+       =================================================================== -->
+  <header class="site-header">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="CLEAN HOUSE, ir al inicio">
+        <svg class="brand__mark" viewBox="0 0 64 56" aria-hidden="true" focusable="false"><use href="#logo-mark"/></svg>
+        <svg class="brand__word" viewBox="0 0 103 42.5" aria-hidden="true" focusable="false"><use href="#logo-word"/></svg>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a class="btn btn--wa btn--sm header__wa" href="https://wa.me/50432421700?text=Hola%20Clean%20House%2C%20quiero%20cotizar%20sus%20servicios." target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+        WhatsApp
+      </a>
+      <a class="btn btn--wa header__cta" href="https://wa.me/50432421700?text=Hola%20Clean%20House%2C%20quiero%20cotizar%20sus%20servicios." target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+        Solicitar cotización
+      </a>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===================================================================
+         SECCIÓN 3 · HERO PRINCIPAL
+         =================================================================== -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="bubble bubble--1"></span>
+        <span class="bubble bubble--2"></span>
+        <span class="bubble bubble--3"></span>
+        <span class="bubble bubble--4"></span>
+        <span class="bubble bubble--5"></span>
+        <span class="bubble bubble--6"></span>
+      </div>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="hero__eyebrow">
+            <span class="hero__eyebrow-icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+            Atención en Tegucigalpa y Comayagüela
+          </p>
+          <h1 class="hero__title" id="hero-title">
+            Limpieza, fumigación y vaciado de fosas sépticas <span class="hero__accent">en Tegucigalpa</span>
+          </h1>
+          <p class="hero__slogan">Calidad, Limpieza y Frescura</p>
+          <p class="hero__text">Soluciones de limpieza para hogares, oficinas y negocios. Comuníquese con nosotros y solicite atención para su necesidad.</p>
+
+          <div class="hero__ctas">
+            <a class="btn btn--wa btn--lg" href="https://wa.me/50432421700?text=Hola%20Clean%20House%2C%20quiero%20cotizar%20sus%20servicios." target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Cotizar por WhatsApp
+            </a>
+            <a class="btn btn--outline btn--lg" href="tel:+50432421700">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>
+              Llamar ahora
+            </a>
+          </div>
+          <p class="hero__note">
+            <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+            WhatsApp y teléfono:
+            <a href="tel:+50432421700">+504 3242-1700</a>
+          </p>
+        </div>
+
+        <!-- Ilustración original (decorativa) -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero-art">
+            <svg class="hero-art__svg" viewBox="0 0 480 480" focusable="false">
+              <defs>
+                <radialGradient id="g-stage" cx="50%" cy="42%" r="62%">
+                  <stop offset="0" stop-color="#FFFFFF"/>
+                  <stop offset=".62" stop-color="#E3F4FD"/>
+                  <stop offset="1" stop-color="#BFE6FA"/>
+                </radialGradient>
+                <linearGradient id="g-house" x1="0" y1="0" x2=".35" y2="1">
+                  <stop offset="0" stop-color="#1557AE"/>
+                  <stop offset="1" stop-color="#0B3C7A"/>
+                </linearGradient>
+                <linearGradient id="g-swoosh-lg" x1="0" y1="1" x2="1" y2="0">
+                  <stop offset="0" stop-color="#0B3C7A"/>
+                  <stop offset=".55" stop-color="#1E73D8"/>
+                  <stop offset="1" stop-color="#5AB0EC"/>
+                </linearGradient>
+                <radialGradient id="g-glow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0" stop-color="#FFFFFF" stop-opacity=".35"/>
+                  <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+                </radialGradient>
+                <clipPath id="clip-stage"><circle cx="240" cy="236" r="196"/></clipPath>
+              </defs>
+
+              <circle cx="240" cy="236" r="222" fill="none" stroke="#1E73D8" stroke-opacity=".22" stroke-width="2" stroke-dasharray="2 11" stroke-linecap="round"/>
+              <circle cx="240" cy="236" r="196" fill="url(#g-stage)"/>
+              <g clip-path="url(#clip-stage)" stroke="#FFFFFF" stroke-width="2" opacity=".75">
+                <path d="M0 96h480M0 156h480M0 216h480M0 276h480M0 336h480M0 396h480M60 0v480M120 0v480M180 0v480M240 0v480M300 0v480M360 0v480M420 0v480"/>
+              </g>
+              <circle cx="240" cy="236" r="196" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+
+              <ellipse cx="240" cy="384" rx="128" ry="13" fill="#0B3C7A" opacity=".13"/>
+
+              <!-- Casa -->
+              <rect x="168" y="144" width="26" height="58" rx="5" fill="url(#g-house)"/>
+              <path d="M128 226 226.5 138.6a20 20 0 0 1 27 0L352 226v128a14 14 0 0 1-14 14H142a14 14 0 0 1-14-14z" fill="url(#g-house)"/>
+              <path d="M142 222 229 145" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="240" cy="270" r="74" fill="url(#g-glow)"/>
+              <polygon transform="translate(240 270) scale(5.2) translate(-32 -33)" points="32,23.5 32.65,31.43 35.54,29.46 33.57,32.35 41.5,33 33.57,33.65 35.54,36.54 32.65,34.57 32,42.5 31.35,34.57 28.46,36.54 30.43,33.65 22.5,33 30.43,32.35 28.46,29.46 31.35,31.43" fill="#FFFFFF"/>
+
+              <!-- Aro -->
+              <path d="M88 300C96 438 368 446 446 140 378 392 156 410 88 300z" fill="url(#g-swoosh-lg)" stroke="#FFFFFF" stroke-width="7" paint-order="stroke"/>
+
+              <!-- Destellos -->
+              <path class="twinkle" d="M146 104c1.2 9.6 4.2 12.6 13.8 13.8-9.6 1.2-12.6 4.2-13.8 13.8-1.2-9.6-4.2-12.6-13.8-13.8 9.6-1.2 12.6-4.2 13.8-13.8z" fill="#7CB518"/>
+              <path class="twinkle twinkle--2" d="M404 238c.9 7 3 9.1 10 10-7 .9-9.1 3-10 10-.9-7-3-9.1-10-10 7-.9 9.1-3 10-10z" fill="#7CB518"/>
+              <path class="twinkle" d="M84 262c.6 4.6 2 6 6.6 6.6-4.6.6-6 2-6.6 6.6-.6-4.6-2-6-6.6-6.6 4.6-.6 6-2 6.6-6.6z" fill="#1E73D8" opacity=".7"/>
+
+              <!-- Burbujas -->
+              <g class="float-a"><use href="#bubble" x="334" y="52" width="76" height="76"/></g>
+              <g class="float-b"><use href="#bubble" x="410" y="36" width="30" height="30"/></g>
+              <g class="float-c"><use href="#bubble" x="318" y="26" width="18" height="18"/></g>
+              <g class="float-b"><use href="#bubble" x="70" y="132" width="40" height="40"/></g>
+              <g class="float-c"><use href="#bubble" x="56" y="198" width="16" height="16"/></g>
+              <g class="float-a"><use href="#bubble" x="392" y="292" width="36" height="36"/></g>
+              <g class="float-c"><use href="#bubble" x="112" y="404" width="24" height="24"/></g>
+            </svg>
+
+            <div class="fcard fcard--1">
+              <span class="fcard__icon fcard__icon--navy"><svg><use href="#s-truck"/></svg></span>
+              Vaciado de fosa séptica
+            </div>
+            <div class="fcard fcard--2">
+              <span class="fcard__icon fcard__icon--blue"><svg><use href="#s-office"/></svg></span>
+              Limpieza de oficinas
+            </div>
+            <div class="fcard fcard--3">
+              <span class="fcard__icon fcard__icon--green"><svg><use href="#s-shield"/></svg></span>
+              Fumigación
+            </div>
+            <div class="fchip">
+              <svg class="icon"><use href="#i-pin"/></svg>
+              Tegucigalpa y Comayagüela
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg class="hero__wave" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M0 46C180 78 360 82 560 62S920 6 1120 10s260 26 320 34v36H0z"/>
+      </svg>
+    </section>
+
+    <!-- ===================================================================
+         SECCIÓN 4 · SERVICIOS
+         =================================================================== -->
+    <section class="section services" id="servicios" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Lo que hacemos</p>
+          <h2 class="h2" id="services-title">Nuestros servicios</h2>
+          <p class="section-lead">Ofrecemos soluciones de limpieza para diferentes espacios y necesidades.</p>
+        </div>
+
+        <ul class="svc-grid">
+          <!-- 1. Vaciado de fosa séptica -->
+          <li data-reveal style="--d:0">
+            <article class="svc svc--1" aria-labelledby="svc-1">
+              <div class="svc__media" aria-hidden="true">
+                <span class="svc__num">01</span>
+                <span class="svc__icon"><svg><use href="#s-truck"/></svg></span>
+              </div>
+              <div class="svc__body">
+                <h3 class="svc__title" id="svc-1">Vaciado de fosa séptica</h3>
+                <p class="svc__text">Servicio de vaciado de fosas sépticas para ayudar a mantener sus instalaciones en buenas condiciones de limpieza y funcionamiento.</p>
+                <a class="btn btn--soft" href="https://wa.me/50432421700?text=Hola%20Clean%20House%2C%20quiero%20cotizar%20el%20servicio%20de%20vaciado%20de%20fosa%20s%C3%A9ptica." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                  Solicitar este servicio<span class="sr-only">: vaciado de fosa séptica, por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <!-- 2. Limpieza de oficinas -->
+          <li data-reveal style="--d:1">
+            <article class="svc svc--2" aria-labelledby="svc-2">
+              <div class="svc__media" aria-hidden="true">
+                <span class="svc__num">02</span>
+                <span class="svc__icon"><svg><use href="#s-office"/></svg></span>
+              </div>
+              <div class="svc__body">
+                <h3 class="svc__title" id="svc-2">Limpieza de oficinas</h3>
+                <p class="svc__text">Servicio de limpieza para espacios de trabajo, con atención a las áreas y superficies que necesitan mantenerse limpias y ordenadas.</p>
+                <a class="btn btn--soft" href="https://wa.me/50432421700?text=Hola%20Clean%20House%2C%20quiero%20cotizar%20el%20servicio%20de%20limpieza%20de%20oficinas." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                  Solicitar este servicio<span class="sr-only">: limpieza de oficinas, por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </li>
+
+          <!-- 3. Fumigación -->
+          <li data-reveal style="--d:2">
+            <article class="svc svc--3" aria-labelledby="svc-3">
+              <div class="svc__media" aria-hidden="true">
+                <span class="svc__num">03</span>
+                <span class="svc__icon"><svg><use href="#s-shield"/></svg></span>
+              </div>
+              <div class="svc__body">
+                <h3 class="svc__title" id="svc-3">Fumigación</h3>
+                <p class="svc__text">Servicio de fumigación para atender necesidades de control de plagas en hogares, negocios y otros espacios.</p>
+                <a class="btn btn--soft" href="https://wa.me/50432421700?text=Hola%20Clean%20House%2C%20quiero%20cotizar%20el%20servicio%20de%20fumigaci%C3%B3n." target="_blank" rel="noopener">
+                  <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                  Solicitar este servicio<span class="sr-only">: fumigación, por WhatsApp</span>
+                </a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECCIÓN 5 · ¿POR QUÉ ELEGIR CLEAN HOUSE?
+         =================================================================== -->
+    <section class="section section--tint why" id="nosotros" aria-labelledby="why-title">
+      <div class="container why__grid">
+        <div class="why__panel on-dark" data-reveal>
+          <span class="bubble bubble--a" aria-hidden="true"></span>
+          <span class="bubble bubble--b" aria-hidden="true"></span>
+          <p class="eyebrow eyebrow--light">¿Por qué elegir CLEAN HOUSE?</p>
+          <h2 class="h2" id="why-title">Su espacio limpio, nuestra prioridad</h2>
+          <p class="why__slogan">“Calidad, Limpieza y Frescura”</p>
+          <p class="why__copy">Atendemos hogares, oficinas y negocios en Tegucigalpa y Comayagüela.</p>
+          <a class="btn btn--light" href="https://wa.me/50432421700?text=Hola%20Clean%20House%2C%20quisiera%20conversar%20sobre%20lo%20que%20necesito." target="_blank" rel="noopener">
+            Conversemos sobre lo que necesita
+            <svg class="icon icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+          <svg class="why__mark" viewBox="0 0 64 56" aria-hidden="true" focusable="false"><use href="#logo-mark"/></svg>
+        </div>
+
+        <ul class="why__list">
+          <li class="why-item" data-reveal style="--d:1">
+            <span class="why-item__icon tone-green" aria-hidden="true"><svg><use href="#i-chat"/></svg></span>
+            <h3>Atención directa</h3>
+            <p>Comuníquese fácilmente con nuestro equipo por WhatsApp o teléfono.</p>
+          </li>
+          <li class="why-item" data-reveal style="--d:2">
+            <span class="why-item__icon tone-blue" aria-hidden="true"><svg><use href="#i-spaces"/></svg></span>
+            <h3>Para diferentes espacios</h3>
+            <p>Soluciones para hogares, oficinas y negocios.</p>
+          </li>
+          <li class="why-item" data-reveal style="--d:3">
+            <span class="why-item__icon tone-sky" aria-hidden="true"><svg><use href="#i-clean"/></svg></span>
+            <h3>Trabajo ordenado</h3>
+            <p>Atención enfocada en la limpieza y el cuidado de cada espacio.</p>
+          </li>
+          <li class="why-item" data-reveal style="--d:4">
+            <span class="why-item__icon tone-navy" aria-hidden="true"><svg><use href="#i-map"/></svg></span>
+            <h3>Cobertura local</h3>
+            <p>Atención en Tegucigalpa y Comayagüela.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECCIÓN 6 · ¿CÓMO FUNCIONA?
+         =================================================================== -->
+    <section class="section process" id="proceso" aria-labelledby="process-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">¿Cómo funciona?</p>
+          <h2 class="h2" id="process-title">Solicitar su servicio es sencillo</h2>
+        </div>
+
+        <ol class="steps" data-reveal>
+          <li class="step">
+            <div class="step__badge" aria-hidden="true">
+              <svg><use href="#i-chat"/></svg>
+              <span class="step__num">01</span>
+            </div>
+            <div class="step__body">
+              <h3><span class="sr-only">Paso 1: </span>Nos escribe</h3>
+              <p>Cuéntenos qué servicio necesita mediante WhatsApp o teléfono.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__badge" aria-hidden="true">
+              <svg><use href="#i-calendar"/></svg>
+              <span class="step__num">02</span>
+            </div>
+            <div class="step__body">
+              <h3><span class="sr-only">Paso 2: </span>Coordinamos la visita</h3>
+              <p>Conversamos sobre sus necesidades y coordinamos los detalles del servicio.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step__badge" aria-hidden="true">
+              <svg><use href="#i-clean"/></svg>
+              <span class="step__num">03</span>
+            </div>
+            <div class="step__body">
+              <h3><span class="sr-only">Paso 3: </span>Lo dejamos todo limpio</h3>
+              <p>Nuestro equipo atiende el servicio solicitado.</p>
+            </div>
+          </li>
+        </ol>
+
+        <div class="process__cta" data-reveal>
+          <a class="btn btn--wa btn--lg" href="https://wa.me/50432421700?text=Hola%20Clean%20House%2C%20quisiera%20solicitar%20atenci%C3%B3n%20para%20un%20servicio." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+            Solicitar atención por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECCIÓN 7 · ¿PARA QUIÉN TRABAJAMOS?
+         =================================================================== -->
+    <section class="section section--tint spaces" id="espacios" aria-labelledby="spaces-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">¿Para quién trabajamos?</p>
+          <h2 class="h2" id="spaces-title">Soluciones para diferentes espacios</h2>
+        </div>
+
+        <ul class="spaces__grid">
+          <li class="space" data-reveal style="--d:0"><span class="space__icon" aria-hidden="true"><svg><use href="#i-home"/></svg></span><span class="space__label">Hogares</span></li>
+          <li class="space" data-reveal style="--d:1"><span class="space__icon" aria-hidden="true"><svg><use href="#i-building"/></svg></span><span class="space__label">Oficinas</span></li>
+          <li class="space" data-reveal style="--d:2"><span class="space__icon" aria-hidden="true"><svg><use href="#i-store"/></svg></span><span class="space__label">Negocios</span></li>
+          <li class="space" data-reveal style="--d:3"><span class="space__icon" aria-hidden="true"><svg><use href="#i-restaurant"/></svg></span><span class="space__label">Restaurantes</span></li>
+          <li class="space" data-reveal style="--d:4"><span class="space__icon" aria-hidden="true"><svg><use href="#i-school"/></svg></span><span class="space__label">Colegios</span></li>
+          <li class="space" data-reveal style="--d:5"><span class="space__icon" aria-hidden="true"><svg><use href="#i-condo"/></svg></span><span class="space__label">Condominios</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECCIÓN 8 · GALERÍA
+         Cada <figure> es un marcador de posición. Para reemplazarlo por una
+         fotografía real, sustituya el bloque .ph__art (o .ph__ba) por:
+         <img src="fotos/archivo.jpg" alt="Descripción de la foto" loading="lazy"
+              width="1200" height="900" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover">
+         =================================================================== -->
+    <section class="section gallery-section" id="galeria" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Galería</p>
+          <h2 class="h2" id="gallery-title">Nuestro trabajo en imágenes</h2>
+          <p class="section-lead">Conozca los espacios, equipos y trabajos que forman parte de nuestros servicios.</p>
+        </div>
+
+        <div class="gallery">
+          <!-- [FOTO PENDIENTE] Antes / después -->
+          <figure class="ph ph--1" data-reveal style="--d:0">
+            <div class="ph__ba" aria-hidden="true">
+              <div class="ph__half ph__half--before"><span class="ph__tag">Antes</span></div>
+              <div class="ph__half ph__half--after">
+                <span class="ph__tag">Después</span>
+                <svg class="ph__sparkle ph__sparkle--1"><use href="#i-sparkle"/></svg>
+                <svg class="ph__sparkle ph__sparkle--2"><use href="#i-sparkle"/></svg>
+              </div>
+              <span class="ph__divider"></span>
+              <span class="ph__handle"><svg><use href="#i-arrows-h"/></svg></span>
+            </div>
+            <figcaption class="ph__label"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg>Foto: Antes / después</figcaption>
+          </figure>
+
+          <!-- [FOTO PENDIENTE] Equipo trabajando -->
+          <figure class="ph ph--2" data-reveal style="--d:1">
+            <div class="ph__art" aria-hidden="true"><span class="ph__icon"><svg><use href="#i-users"/></svg></span></div>
+            <figcaption class="ph__label"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg>Foto: Equipo trabajando</figcaption>
+          </figure>
+
+          <!-- [FOTO PENDIENTE] Camión de servicio -->
+          <figure class="ph ph--3" data-reveal style="--d:2">
+            <div class="ph__art" aria-hidden="true"><span class="ph__icon"><svg><use href="#s-truck"/></svg></span></div>
+            <figcaption class="ph__label"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg>Foto: Camión de servicio</figcaption>
+          </figure>
+
+          <!-- [FOTO PENDIENTE] Limpieza de oficinas -->
+          <figure class="ph ph--4" data-reveal style="--d:3">
+            <div class="ph__art" aria-hidden="true"><span class="ph__icon"><svg><use href="#s-office"/></svg></span></div>
+            <figcaption class="ph__label"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg>Foto: Limpieza de oficinas</figcaption>
+          </figure>
+
+          <!-- [FOTO PENDIENTE] Servicio de fumigación -->
+          <figure class="ph ph--5" data-reveal style="--d:1">
+            <div class="ph__art" aria-hidden="true"><span class="ph__icon"><svg><use href="#s-shield"/></svg></span></div>
+            <figcaption class="ph__label"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg>Foto: Servicio de fumigación</figcaption>
+          </figure>
+
+          <!-- [FOTO PENDIENTE] Equipo CLEAN HOUSE -->
+          <figure class="ph ph--6" data-reveal style="--d:2">
+            <div class="ph__art" aria-hidden="true"><span class="ph__icon"><svg viewBox="0 0 64 56"><use href="#logo-mark"/></svg></span></div>
+            <figcaption class="ph__label"><svg class="icon" aria-hidden="true"><use href="#i-camera"/></svg>Foto: Equipo CLEAN HOUSE</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECCIÓN 9 · PREGUNTAS FRECUENTES
+         =================================================================== -->
+    <section class="section section--tint faq" id="preguntas" aria-labelledby="faq-title">
+      <div class="container faq__layout">
+        <div class="faq__intro" data-reveal>
+          <div class="section-head">
+            <p class="eyebrow">Resolvemos sus dudas</p>
+            <h2 class="h2" id="faq-title">Preguntas frecuentes</h2>
+          </div>
+          <div class="help-card faq__aside">
+            <h3>¿Tiene otra pregunta?</h3>
+            <p>Escríbanos y le orientamos según su caso.</p>
+            <a class="btn btn--wa" href="https://wa.me/50432421700?text=Hola%20Clean%20House%2C%20tengo%20una%20consulta%20sobre%20sus%20servicios." target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Escribir por WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="faq__list" data-reveal>
+            <div class="faq__item is-open">
+              <h3 class="faq__q">
+                <button type="button" class="faq__btn" id="faq-btn-1" aria-expanded="true" aria-controls="faq-panel-1">
+                  <span>¿Cada cuánto tiempo se debe vaciar una fosa séptica?</span>
+                  <span class="faq__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-1" role="region" aria-labelledby="faq-btn-1">
+                <div class="faq__panel-inner">
+                  <p>La frecuencia depende del tamaño de la fosa, la cantidad de personas que utilizan el sistema y su estado. Comuníquese con nosotros para recibir orientación según su situación.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <h3 class="faq__q">
+                <button type="button" class="faq__btn" id="faq-btn-2" aria-expanded="false" aria-controls="faq-panel-2">
+                  <span>¿La fumigación es segura para niños y mascotas?</span>
+                  <span class="faq__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-2" role="region" aria-labelledby="faq-btn-2">
+                <div class="faq__panel-inner">
+                  <p>Las medidas de seguridad dependen del tipo de servicio y del espacio que se atenderá. Antes de realizarlo, es importante informar si hay niños o mascotas para recibir las indicaciones correspondientes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <h3 class="faq__q">
+                <button type="button" class="faq__btn" id="faq-btn-3" aria-expanded="false" aria-controls="faq-panel-3">
+                  <span>¿Qué zonas atienden?</span>
+                  <span class="faq__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-3" role="region" aria-labelledby="faq-btn-3">
+                <div class="faq__panel-inner">
+                  <p>Brindamos atención en Tegucigalpa y Comayagüela. Para consultar sobre una ubicación específica, escríbanos por WhatsApp.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <h3 class="faq__q">
+                <button type="button" class="faq__btn" id="faq-btn-4" aria-expanded="false" aria-controls="faq-panel-4">
+                  <span>¿Cómo puedo solicitar una cotización?</span>
+                  <span class="faq__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-4" role="region" aria-labelledby="faq-btn-4">
+                <div class="faq__panel-inner">
+                  <p>Puede comunicarse directamente con nosotros por WhatsApp o teléfono. Cuéntenos qué servicio necesita y le orientaremos sobre los siguientes pasos.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq__item">
+              <h3 class="faq__q">
+                <button type="button" class="faq__btn" id="faq-btn-5" aria-expanded="false" aria-controls="faq-panel-5">
+                  <span>¿Atienden oficinas y empresas?</span>
+                  <span class="faq__icon" aria-hidden="true"></span>
+                </button>
+              </h3>
+              <div class="faq__panel" id="faq-panel-5" role="region" aria-labelledby="faq-btn-5">
+                <div class="faq__panel-inner">
+                  <p>Sí, contamos con servicios de limpieza de oficinas y atención para diferentes tipos de espacios comerciales. Escríbanos y le explicamos según su caso.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="help-card faq__after" data-reveal>
+            <h3>¿Tiene otra pregunta?</h3>
+            <p>Escríbanos y le orientamos según su caso.</p>
+            <a class="btn btn--wa" href="https://wa.me/50432421700?text=Hola%20Clean%20House%2C%20tengo%20una%20consulta%20sobre%20sus%20servicios." target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Escribir por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         SECCIÓN 10 · CONTACTO
+         =================================================================== -->
+    <section class="section contact" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Contacto</p>
+          <h2 class="h2" id="contact-title">Estamos listos para atenderle</h2>
+          <p class="section-lead">Cuéntenos qué necesita. Nuestro equipo estará disponible para orientarle sobre nuestros servicios.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info" data-reveal>
+            <h3 class="sr-only">Medios de contacto</h3>
+            <ul class="contact-list">
+              <li>
+                <a class="citem citem--wa" href="https://wa.me/50432421700" target="_blank" rel="noopener">
+                  <span class="citem__icon tone-wa" aria-hidden="true"><svg><use href="#i-whatsapp"/></svg></span>
+                  <span class="citem__text"><span class="citem__label">WhatsApp principal</span><span class="citem__value">+504 3242-1700</span></span>
+                  <svg class="citem__go" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="citem" href="tel:+50432421700">
+                  <span class="citem__icon tone-blue" aria-hidden="true"><svg><use href="#i-phone"/></svg></span>
+                  <span class="citem__text"><span class="citem__label">Teléfono principal</span><span class="citem__value">+504 3242-1700</span></span>
+                  <svg class="citem__go" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="citem" href="tel:+50427989472">
+                  <span class="citem__icon tone-sky" aria-hidden="true"><svg><use href="#i-phone"/></svg></span>
+                  <span class="citem__text"><span class="citem__label">Teléfono adicional</span><span class="citem__value">+504 2798-9472</span></span>
+                  <svg class="citem__go" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="citem" href="mailto:copanclean@gmail.com">
+                  <span class="citem__icon tone-green" aria-hidden="true"><svg><use href="#i-mail"/></svg></span>
+                  <span class="citem__text"><span class="citem__label">Correo electrónico</span><span class="citem__value">copanclean@gmail.com</span></span>
+                  <svg class="citem__go" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </li>
+              <li>
+                <a class="citem" href="https://www.facebook.com/cleanhousetegus/" target="_blank" rel="noopener">
+                  <span class="citem__icon tone-fb" aria-hidden="true"><svg><use href="#i-facebook"/></svg></span>
+                  <span class="citem__text"><span class="citem__label">Facebook</span><span class="citem__value">CLEAN HOUSE</span></span>
+                  <svg class="citem__go" aria-hidden="true"><use href="#i-arrow"/></svg>
+                </a>
+              </li>
+              <li>
+                <div class="citem">
+                  <span class="citem__icon tone-navy" aria-hidden="true"><svg><use href="#i-user"/></svg></span>
+                  <span class="citem__text"><span class="citem__label">Contacto</span><span class="citem__value">Saira Rivera</span></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Formulario: arma el mensaje y abre WhatsApp (sin servidor) -->
+          <form class="cform" id="contact-form" novalidate data-reveal aria-labelledby="form-title">
+            <h3 class="cform__title" id="form-title">Escríbanos su consulta</h3>
+            <p class="cform__intro">Complete los datos y abriremos WhatsApp con su mensaje listo para enviar.</p>
+            <p class="cform__req">Todos los campos son obligatorios.</p>
+
+            <div class="field">
+              <label for="f-nombre">Nombre</label>
+              <input class="input" id="f-nombre" name="nombre" type="text" autocomplete="name" maxlength="80" required aria-describedby="f-nombre-error" placeholder="Escriba su nombre">
+              <p class="field__error" id="f-nombre-error"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-servicio">Servicio de interés</label>
+              <select class="input" id="f-servicio" name="servicio" required aria-describedby="f-servicio-error">
+                <option value="" selected disabled>Seleccione un servicio</option>
+                <option value="vaciado de fosa séptica">Vaciado de fosa séptica</option>
+                <option value="limpieza de oficinas">Limpieza de oficinas</option>
+                <option value="fumigación">Fumigación</option>
+                <option value="otro">Otro / Consulta general</option>
+              </select>
+              <p class="field__error" id="f-servicio-error"></p>
+            </div>
+
+            <div class="field">
+              <label for="f-mensaje">Mensaje</label>
+              <textarea class="input" id="f-mensaje" name="mensaje" rows="4" maxlength="600" required aria-describedby="f-mensaje-error" placeholder="Cuéntenos qué necesita y en qué zona se encuentra."></textarea>
+              <p class="field__error" id="f-mensaje-error"></p>
+            </div>
+
+            <button type="submit" class="btn btn--wa btn--lg btn--block">
+              <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+              Enviar por WhatsApp
+            </button>
+            <p class="cform__note">
+              <svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>
+              Su mensaje se abrirá en WhatsApp y usted decide cuándo enviarlo.
+            </p>
+            <div class="cform__status" id="form-status" role="status" aria-live="polite"></div>
+          </form>
+
+          <!-- [PENDIENTE] Mapa: reemplazar este bloque por el iframe de Google Maps
+               con loading="lazy" cuando se confirme la dirección comercial. -->
+          <div class="map-ph" data-reveal>
+            <svg class="map-ph__bg" viewBox="0 0 400 230" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+              <rect width="400" height="230" fill="#E8F3FB"/>
+              <g fill="#DBEBF7">
+                <rect x="18" y="18" width="92" height="58" rx="8"/><rect x="132" y="18" width="70" height="58" rx="8"/>
+                <rect x="226" y="18" width="150" height="40" rx="8"/><rect x="18" y="100" width="60" height="70" rx="8"/>
+                <rect x="250" y="80" width="126" height="62" rx="8"/><rect x="100" y="188" width="110" height="34" rx="8"/>
+                <rect x="290" y="166" width="90" height="56" rx="8"/>
+              </g>
+              <path d="M-10 168c60-20 110-6 160 4s120 14 170-26 70-60 100-70" fill="none" stroke="#BFE6FA" stroke-width="14" stroke-linecap="round"/>
+              <g fill="none" stroke="#fff" stroke-linecap="round">
+                <path d="M0 88h400M120 0v230M218 0v230" stroke-width="10"/>
+                <path d="M0 180h400M86 88v142M300 0v88M240 150h160" stroke-width="6"/>
+              </g>
+              <path d="M120 88h98v62h80" fill="none" stroke="#1E73D8" stroke-opacity=".35" stroke-width="3" stroke-dasharray="6 7" stroke-linecap="round"/>
+            </svg>
+            <div class="map-ph__card">
+              <span class="map-ph__pin" aria-hidden="true"><svg><use href="#i-pin"/></svg></span>
+              <span>
+                <span class="map-ph__title">Mapa de Google</span>
+                <span class="map-ph__sub">Se agrega con su dirección comercial</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       SECCIÓN 11 · FOOTER
+       =================================================================== -->
+  <footer class="site-footer on-dark">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a class="brand brand--footer" href="#inicio" aria-label="CLEAN HOUSE, ir al inicio">
+            <svg class="brand__mark" viewBox="0 0 64 56" aria-hidden="true" focusable="false"><use href="#logo-mark"/></svg>
+            <svg class="brand__word" viewBox="0 0 103 42.5" aria-hidden="true" focusable="false"><use href="#logo-word"/></svg>
+          </a>
+          <p class="footer__slogan">Calidad, Limpieza y Frescura</p>
+          <a class="footer__social" href="https://www.facebook.com/cleanhousetegus/" target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg>
+            Síganos en Facebook
+          </a>
+        </div>
+
+        <nav aria-labelledby="footer-nav-title">
+          <h2 class="footer__title" id="footer-nav-title">Navegación</h2>
+          <ul class="footer__links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#preguntas">Preguntas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <h2 class="footer__title">Contacto</h2>
+          <ul class="footer__contact">
+            <li><a href="https://wa.me/50432421700" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg><span><span class="k">WhatsApp:</span> +504 3242-1700</span></a></li>
+            <li><a href="tel:+50427989472"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg><span><span class="k">Teléfono:</span> +504 2798-9472</span></a></li>
+            <li><a href="mailto:copanclean@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg><span><span class="k">Correo:</span> copanclean@gmail.com</span></a></li>
+            <li><a href="https://www.facebook.com/cleanhousetegus/" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg><span><span class="k">Facebook:</span> CLEAN HOUSE</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 Clean House. Todos los derechos reservados.</p>
+        <p class="footer__credit">Sitio de muestra diseñado por&nbsp;<a href="https://andremartti.github.io/Nodo-Colibr-/" target="_blank" rel="noopener">Nodo Colibrí</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <aside aria-label="Contacto rápido">
+    <a class="wa-float" href="https://wa.me/50432421700?text=Hola%20Clean%20House%2C%20quisiera%20recibir%20informaci%C3%B3n%20sobre%20sus%20servicios." target="_blank" rel="noopener" aria-label="Escríbanos por WhatsApp">
+      <svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+      <span class="wa-float__tip" aria-hidden="true">Escríbanos por WhatsApp</span>
+    </a>
+  </aside>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const WA_URL = 'https://wa.me/50432421700';
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const $ = (sel, ctx = document) => ctx.querySelector(sel);
+      const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
+
+      /* ---------- Cinta informativa ---------- */
+      const ribbon = $('#ribbon');
+      const ribbonClose = $('#ribbon-close');
+      if (ribbon && ribbonClose) {
+        ribbonClose.addEventListener('click', () => {
+          let done = false;
+          const finish = () => {
+            if (done) return;
+            done = true;
+            ribbon.remove();
+            const brand = $('.site-header .brand');
+            if (brand) brand.focus({ preventScroll: true });
+            updateHeader();
+          };
+          if (reduceMotion.matches) { finish(); return; }
+          ribbon.style.height = ribbon.offsetHeight + 'px';
+          requestAnimationFrame(() => {
+            ribbon.classList.add('is-closing');
+            ribbon.style.height = '0px';
+          });
+          ribbon.addEventListener('transitionend', (e) => { if (e.propertyName === 'height') finish(); });
+          setTimeout(finish, 500);
+        });
+      }
+
+      /* ---------- Header: sombra al desplazar ---------- */
+      const header = $('.site-header');
+      function updateHeader() {
+        if (!header) return;
+        const offset = ribbon && ribbon.isConnected ? ribbon.offsetHeight : 0;
+        header.classList.toggle('is-scrolled', window.scrollY > offset + 2);
+      }
+      window.addEventListener('scroll', updateHeader, { passive: true });
+      updateHeader();
+
+      /* ---------- Navegación: sección activa ---------- */
+      const navLinks = $$('.nav__list a[href^="#"]');
+      if ('IntersectionObserver' in window && navLinks.length) {
+        const bySection = new Map();
+        navLinks.forEach((link) => {
+          const section = $(link.getAttribute('href'));
+          if (section) bySection.set(section, link);
+        });
+        const spy = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            navLinks.forEach((l) => l.removeAttribute('aria-current'));
+            const active = bySection.get(entry.target);
+            if (active) active.setAttribute('aria-current', 'true');
+          });
+        }, { rootMargin: '-45% 0px -50% 0px' });
+        bySection.forEach((_link, section) => spy.observe(section));
+        const hero = $('#inicio');
+        if (hero) {
+          new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) navLinks.forEach((l) => l.removeAttribute('aria-current'));
+          }, { rootMargin: '-45% 0px -50% 0px' }).observe(hero);
+        }
+      }
+
+      /* ---------- Aparición suave al desplazar ---------- */
+      const revealEls = $$('[data-reveal]');
+      if ('IntersectionObserver' in window && !reduceMotion.matches) {
+        const io = new IntersectionObserver((entries, obs) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { rootMargin: '0px 0px -6% 0px', threshold: 0.08 });
+        revealEls.forEach((el) => io.observe(el));
+      } else {
+        revealEls.forEach((el) => el.classList.add('is-visible'));
+      }
+
+      /* ---------- Preguntas frecuentes (acordeón accesible) ---------- */
+      const faqButtons = $$('.faq__btn');
+      const setOpen = (btn, open) => {
+        btn.setAttribute('aria-expanded', String(open));
+        btn.closest('.faq__item').classList.toggle('is-open', open);
+      };
+      faqButtons.forEach((btn) => {
+        btn.addEventListener('click', () => setOpen(btn, btn.getAttribute('aria-expanded') !== 'true'));
+        btn.addEventListener('keydown', (e) => {
+          const i = faqButtons.indexOf(btn);
+          const last = faqButtons.length - 1;
+          let target = null;
+          if (e.key === 'ArrowDown') target = faqButtons[i === last ? 0 : i + 1];
+          else if (e.key === 'ArrowUp') target = faqButtons[i === 0 ? last : i - 1];
+          else if (e.key === 'Home') target = faqButtons[0];
+          else if (e.key === 'End') target = faqButtons[last];
+          if (target) { e.preventDefault(); target.focus(); }
+        });
+      });
+
+      /* ---------- Formulario → WhatsApp ---------- */
+      const form = $('#contact-form');
+      if (form) {
+        const nombre = $('#f-nombre', form);
+        const servicio = $('#f-servicio', form);
+        const mensaje = $('#f-mensaje', form);
+        const status = $('#form-status', form);
+        let attempted = false;
+
+        const rules = {
+          'f-nombre': (v) => {
+            const val = v.trim();
+            if (!val) return 'Por favor, escriba su nombre.';
+            if (val.length < 2) return 'El nombre debe tener al menos 2 caracteres.';
+            return '';
+          },
+          'f-servicio': (v) => (v ? '' : 'Seleccione el servicio de su interés.'),
+          'f-mensaje': (v) => {
+            const val = v.trim();
+            if (!val) return 'Por favor, cuéntenos qué necesita.';
+            if (val.length < 10) return 'Escriba un poco más de detalle (mínimo 10 caracteres).';
+            return '';
+          }
+        };
+
+        const validate = (input) => {
+          const msg = rules[input.id](input.value);
+          const error = document.getElementById(input.id + '-error');
+          if (error) error.textContent = msg;
+          if (msg) input.setAttribute('aria-invalid', 'true');
+          else input.removeAttribute('aria-invalid');
+          return !msg;
+        };
+
+        const setStatus = (type, text, link) => {
+          status.className = 'cform__status' + (type ? ' is-' + type : '');
+          status.textContent = text || '';
+          if (link) {
+            status.append(' ');
+            const a = document.createElement('a');
+            a.href = link;
+            a.target = '_blank';
+            a.rel = 'noopener';
+            a.textContent = 'Abrir WhatsApp';
+            status.append(a);
+          }
+        };
+
+        [nombre, servicio, mensaje].forEach((input) => {
+          const evt = input.tagName === 'SELECT' ? 'change' : 'input';
+          input.addEventListener(evt, () => {
+            if (attempted) validate(input);
+            if (status.classList.contains('is-error') && [nombre, servicio, mensaje].every((el) => !el.hasAttribute('aria-invalid'))) {
+              setStatus('', '');
+            }
+          });
+          input.addEventListener('blur', () => { if (attempted || input.value.trim()) validate(input); });
+        });
+
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          attempted = true;
+          const fields = [nombre, servicio, mensaje];
+          const invalid = fields.filter((input) => !validate(input));
+          if (invalid.length) {
+            setStatus('error', 'Revise los campos marcados para continuar.');
+            invalid[0].focus();
+            return;
+          }
+
+          const name = nombre.value.trim().replace(/\s+/g, ' ');
+          const serviceLine = servicio.value === 'otro'
+            ? 'Quisiera hacer una consulta general.'
+            : 'Estoy interesado en el servicio de ' + servicio.value + '.';
+          const text =
+            'Hola Clean House, mi nombre es ' + name + '. ' + serviceLine + '\n' +
+            'Mensaje: ' + mensaje.value.trim() + '\n' +
+            'Me gustaría recibir más información. Gracias.';
+          const url = WA_URL + '?text=' + encodeURIComponent(text);
+
+          const win = window.open(url, '_blank');
+          if (win) {
+            try { win.opener = null; } catch (_) { /* sin acción */ }
+            setStatus('ok', 'Listo: abrimos WhatsApp con su mensaje. Si no se abrió,', url);
+          } else {
+            window.location.href = url;
+          }
+        });
+
+        /* Oculta el botón flotante mientras se escribe en móvil (teclado abierto) */
+        form.addEventListener('focusin', (e) => {
+          if (e.target.matches('input, select, textarea')) document.body.classList.add('is-typing');
+        });
+        form.addEventListener('focusout', () => document.body.classList.remove('is-typing'));
+      }
+    })();
+  </script>
+</body>
+</html>
